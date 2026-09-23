@@ -1,0 +1,10 @@
+zephyr: 2376
+onyx: 9160
+onyx: 8072
+zephyr: 7392
+onyx: 4656
+onyx: 8008
+onyx: 3288
+granite: 9720
+onyx: 2248
+zephyr: 3040

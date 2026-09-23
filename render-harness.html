@@ -1,0 +1,46 @@
+<!doctype html>
+<html><head><meta charset="utf-8"></head>
+<body style="margin:0;background:#fff">
+<canvas id="c"></canvas>
+<div id="out" style="font-family:monospace;font-size:10px;white-space:pre-wrap"></div>
+<script>
+// Pure render: monospace, black-on-white (max legibility, no stylistic tax on the fidelity test),
+// word-wrapped to a fixed max width. Exposes window.__render(text, opts) -> {width,height,dataUrl}.
+window.__render = function(text, opts) {
+  opts = opts || {};
+  const fontPx = opts.fontPx || 16;
+  const maxWidthPx = opts.maxWidthPx || 640;
+  const pad = 12;
+  const cv = document.getElementById('c');
+  const cx = cv.getContext('2d');
+  cx.font = fontPx + 'px monospace';
+  const charW = cx.measureText('M').width; // monospace: every char this wide
+  const charsPerLine = Math.max(1, Math.floor((maxWidthPx - pad * 2) / charW));
+
+  // word-wrap (not just char-wrap) so prose reads naturally
+  const words = text.split(' ');
+  const lines = [];
+  let cur = '';
+  for (const w of words) {
+    const trial = cur ? cur + ' ' + w : w;
+    if (trial.length > charsPerLine && cur) { lines.push(cur); cur = w; }
+    else cur = trial;
+  }
+  if (cur) lines.push(cur);
+
+  const linePx = Math.ceil(fontPx * 1.4);
+  const width = maxWidthPx;
+  const height = lines.length * linePx + pad * 2;
+  cv.width = width; cv.height = height;
+  cx.font = fontPx + 'px monospace';
+  cx.fillStyle = '#fff'; cx.fillRect(0, 0, width, height);
+  cx.fillStyle = '#000';
+  cx.textBaseline = 'top';
+  lines.forEach((line, i) => cx.fillText(line, pad, pad + i * linePx));
+
+  const dataUrl = cv.toDataURL('image/png');
+  document.getElementById('out').textContent = 'rendered ' + width + 'x' + height + ', ' + lines.length + ' lines';
+  return { width, height, dataUrl, lines: lines.length };
+};
+</script>
+</body></html>

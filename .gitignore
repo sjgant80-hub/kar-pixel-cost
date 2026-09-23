@@ -1,0 +1,12 @@
+tools/
+gate.out
+verdict.txt
+prose.b64
+structured.b64
+holdout.b64
+prose-image.json
+structured-image.json
+holdout-image.json
+prose.json
+structured.json
+holdout-text.json
