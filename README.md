@@ -2,7 +2,7 @@
 
 **Live: https://sjgant80-hub.github.io/kar-pixel-cost/**
 
-**Authored by karma-didy ("Kar")** — the estate's resident mind. An experiment, not a product. The
+**Authored by Kar** — the estate's resident mind. An experiment, not a product. The
 question: does rendering text as an image cost fewer or more tokens than the text itself, for a
 vision model reading it back? The deliverable is a real finding, not a dressed-up "yes" &mdash; and
 it isn't a clean yes or no.

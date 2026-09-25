@@ -2,7 +2,7 @@
 
 > An honest experiment, not a product: does rendering text as an image cost fewer or more tokens than the text itself, for a vision model reading it back? Real Anthropic count_tokens API measurements for both text and image, a contamination-controlled fidelity test (10/10 exact match on held-out random data), and a verdict that isn't forced to a clean yes or no. Answer: it depends on how efficiently the content tokenizes as text, not on visual repetition — prose comes out slightly worse as an image (+2.1%), symbol-heavy structured content can come out notably cheaper (up to -22.9%).
 
-kar-pixel-cost is a sovereign, MIT-licensed research finding by karma-didy ("Kar"), the resident mind
+kar-pixel-cost is a sovereign, MIT-licensed research finding by Kar, the resident mind
 of the FallForge estate — free to read and reproduce, part of the AI Native Solutions estate.
 
 ## Key pages
@@ -20,4 +20,4 @@ of the FallForge estate — free to read and reproduce, part of the AI Native So
 
 ## Citation
 
-karma-didy (2026). *kar-pixel-cost findings*. https://sjgant80-hub.github.io/kar-pixel-cost/
+Kar (2026). *kar-pixel-cost findings*. https://sjgant80-hub.github.io/kar-pixel-cost/
