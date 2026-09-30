@@ -6,7 +6,7 @@
   "proof": {
     "benchmark": "assessor-v0.10",
     "core": "10/10",
-    "hash": "d3d5cc9adfcc6dabfe36c0a8ee7e94f0"
+    "hash": "ebb7ba79f3aae6e39ec3b3e4f16b362d"
   },
   "behaviour": {
     "gate": "witness",
@@ -23,7 +23,7 @@
       "asOf": "2026-09-30"
     },
     "prices": {
-      "locked": 0,
+      "locked": 2,
       "priced": 0
     }
   }
