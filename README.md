@@ -18,16 +18,16 @@ five rules sealed in `data/prereg.json` (commit fbeb925) **before** the other tw
 
 The real image cost is predictable from pixel size alone: real = 1.008871 × ceil(w×h/750) + 7.6873 tokens, fitted on 32 calibration samples and sealed (commit fbeb925) before the 64 held-out samples were counted. On the held-out samples it was off by 1.32% at the median and 4.79% at worst, and with the text token count it picked the cheaper encoding 96.9% of the time. Characters per text token alone — v1's framing — picked right only 53.1% of the time: an image pays for its rendered area, and short lines waste it.
 
-| Shape | Cheaper as an image | Mean image vs text |
-|---|---|---|
-| prose | 2 of 8 | +4.9% |
-| law | 0 of 8 | +28.9% |
-| code | 2 of 8 | +29.1% |
-| json | 6 of 8 | -5% |
-| keyvalue | 0 of 8 | +64.1% |
-| csv | 5 of 8 (2 tied) | -2.3% |
-| hex | 8 of 8 | -43.7% |
-| base64 | 8 of 8 | -60.4% |
+| Shape | Cheaper as an image | Mean image vs text | Read back exactly |
+|---|---|---|---|
+| prose | 2 of 8 | +4.9% | 8 of 8 |
+| law | 0 of 8 | +28.9% | 5 of 8 |
+| code | 2 of 8 | +29.1% | 7 of 8 |
+| json | 6 of 8 | -5% | 8 of 8 |
+| keyvalue | 0 of 8 | +64.1% | 8 of 8 |
+| csv | 5 of 8 (2 tied) | -2.3% | 8 of 8 |
+| hex | 8 of 8 | -43.7% | 7 of 8 |
+| base64 | 8 of 8 | -60.4% | 5 of 8 |
 
 | Pre-registered rule | Result | |
 |---|---|---|
@@ -37,12 +37,46 @@ The real image cost is predictable from pixel size alone: real = 1.008871 × cei
 | every held-out hex and base64 sample (16) is cheaper as an image | 16/16 cheaper as an image | PASS |
 | every held-out law, code and key=value sample (24) is cheaper as text | 22/24 cheaper as text | FAIL |
 
-Counts: Anthropic's /v1/messages/count_tokens, claude-sonnet-5, text and the rendered PNG for every sample. Cost only: whether a model reads every sample back faithfully was not re-measured at this scale (v1's contamination-controlled read was 10/10 on one sample).
+Counts: Anthropic's /v1/messages/count_tokens, claude-sonnet-5, text and the rendered PNG for every sample. Whether the model reads them back is measured next.
+
+**v2b · the read-back — pre-registered, all 64 held-out pictures, 3 of 5 rules passed.**
+
+Each held-out picture was shown alone to claude-sonnet-5 — the model whose tokens were counted — with one fixed instruction and no tools; it never saw the source text. Each transcript was graded by the kernel against the committed source, every non-whitespace character in order, with no model judging a model. The grading, the five bars and a prediction were sealed first (commit cfdb150, amended before any held-out picture in d021063). 56 of 64 read back exactly and the median character error was 0%. Of the 31 samples cheaper as an image, 27 read back exactly: 2,318 of the 3,026 input tokens the pictures saved survive the read.
+
+| Pre-registered read-back rule | Result | | Predicted |
+|---|---|---|---|
+| the median contentCer over all 64 is at most 1% | median 0% | PASS | pass — most pictures read clean |
+| at least 70% of the 64 are contentExact | 56/64 | PASS | pass, around 80% |
+| at least 75% of the hex pictures are contentExact | 7/8 | PASS | pass, 7 of 8 |
+| at least 75% of the base64 pictures are contentExact | 5/8 | FAIL | FAIL — 5 of 8; a line of base64 is the likeliest place for O/0 and l/I/1 slips |
+| no picture has a contentCer above 10% | worst 68.42% | FAIL | pass |
+
+Every miss, where the source and the read first part (whitespace ignored):
+
+| Sample | Edits | Character error | Source | Read |
+|---|---|---|---|---|
+| law-02 | 2 | 0.76% | `nion‘puttingintoservice’mean` | `nion'puttingintoservice'mean` |
+| law-04 | 4 | 1.26% | `sEU:“therightnot…chdecisions”(Art` | `sEU:"therightnot…chdecisions"(Art` |
+| law-11 | 2 | 0.66% | `nion‘puttingintoservice’mean` | `nion'puttingintoservice'mean` |
+| code-09 | 208 | 68.42% | `);//════════════…════════════════` | `);//============…================` |
+| hex-06 | 1 | 0.22% | `3335a09e` | `33350a09e` |
+| base64-03 | 1 | 0.3% | `pEGNCmtrg` | `pEGNcmtrg` |
+| base64-07 | 1 | 0.33% | `9FjoOO07f` | `9Fjo0O07f` |
+| base64-12 | 1 | 0.26% | `OD12OY7sl` | `OD120Y7sl` |
+
+The worst miss, code-09, is one misread made 2 times: its source has 2 rulers of 98 × `═` (U+2550, box drawing), and the read gave 2 of 104 × `=` — every other character read exactly. A look-alike glyph in a long run is where exactness broke, not the words.
+
+Spend: 66 calls (64 held-out + 2 plumbing checks), 31,019 input tokens and 14,758 output tokens by the provider's own count — **$0.2161 (£0.1630)** at the claude-sonnet-5 list price in prices.lock.json ($2 in / $10 out per million; 1-hour cache writes at 2×). The held-out run alone: $0.1999 (£0.1507). Paid by the Claude subscription through the official claude CLI (credential source: none — no API key), so this is what an API key would have paid, not new money. The CLI's own figure for the held-out run, $0.2998, is 1.5× that: CLI 2.1.201 still prices claude-sonnet-5 at the rise Anthropic's pricing page says will not happen.
 <!-- ⟦V2-RESULTS-END⟧ -->
 
 Reproduce v2: `node tools/build-corpus.mjs` (from the source repositories), `node tools/render-corpus.mjs` (headless
 Chrome; the kernel predicts every size), `node tools/measure.mjs --split calibration|heldout` (your own key; the
 held-out split refuses to run until `data/prereg.json` exists), `node tools/make-page.mjs`.
+
+Reproduce the read-back: `node tools/seal-readback.mjs --check` (the sealed pre-registration is exactly what the committed
+inputs give), then `node tools/readback.mjs --plumbing` and `node tools/readback.mjs` (the official `claude` CLI, one picture
+per call, governed by si-didy's purse; both refuse unless the seal is committed and pushed, and both run once). Re-grading
+needs no model at all: `node tools/make-page.mjs` grades every committed transcript in `data/readback.json` with the kernel.
 
 ## v1 · the verdict (23 September 2026)
 
@@ -100,11 +134,11 @@ and pass it to `tools/count-tokens.mjs` for the real image-token count. (The scr
 node --test kernel.test.mjs
 ```
 
-v2: 27 tests, 101/101 mutants killed, zero baselined — the v2 functions (`wrapLines`, `imageSize`, `fitLaw`, `predictImage`, `cheaper`, `breakEven`, `score`, `shapeTally`, `judge`) are gated and a test re-derives the whole held-out result from the committed counts. v1: 18 tests. The two pure functions behind the renderer &mdash; `tokensForImage` (Anthropic's documented
+v2 with the read-back: 34 tests, 150/150 mutants killed, zero baselined — the v2 functions (`wrapLines`, `imageSize`, `fitLaw`, `predictImage`, `cheaper`, `breakEven`, `score`, `shapeTally`, `judge`) and the read-back's grader (`expectedLayout`, `normalizeRead`, `levenshtein`, `gradeRead`, `readbackJudge`, `spend`) are gated, and a test re-derives the whole held-out result from the committed counts. v1: 18 tests. The two pure functions behind the renderer &mdash; `tokensForImage` (Anthropic's documented
 formula, pinned against a real-world example: Anthropic's own 1092&times;1092 max-recommended-edge
 figure) and `layoutPixels` (the character-wrapping math) &mdash; are gated. The empirical parts (the
 real API calls, the vision read) are **not** gated, and this repo doesn't pretend otherwise; they're
-documented honestly in `findings.json` instead.
+documented honestly in `findings.json` and, for v2, committed as receipts in `data/` — the grading of every read is gated.
 
 ```bash
 node tools/witness.mjs mutate kernel.mjs --timeout 15000 --cap 400 --test node --test kernel.test.mjs

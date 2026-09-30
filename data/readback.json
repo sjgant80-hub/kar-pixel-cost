@@ -1,0 +1,3991 @@
+{
+ "kind": "kar-pixel-cost-readback",
+ "v": 1,
+ "sealedIn": "d0210632f9727ac2d6b269e479250bffb6a555b9",
+ "preregSha256": "698d86262e11ff1a01c2010fe9a200af66d2fae1f0d2a7c069838c1dbe65c774",
+ "ranAt": "2026-09-30T10:30:55.731Z",
+ "purse": {
+  "line": "the call ceiling is spent — si-didy will refuse the frontier until it is restarted",
+  "calls": {
+   "limit": 64,
+   "left": 0,
+   "made": 64
+  },
+  "tokens": {
+   "limit": 150000,
+   "left": 108112
+  },
+  "refused": 0,
+  "lastRefusal": null
+ },
+ "rows": [
+  {
+   "id": "prose-01",
+   "ok": true,
+   "transcript": "What has to be true: nothing about seats — local-first costs less at\nany seat coverage, even with no Copilot seats at all, because the\nstaff time on the work is on the corporate bill either way. The floor\ncarries the work at 16.9% of the enrolled laptops in year 1 and 29.6%\nin year 5.",
+   "usage": {
+    "input_tokens": 376,
+    "output_tokens": 102
+   },
+   "rawUsage": {
+    "input_tokens": 376,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 102,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 376,
+      "output_tokens": 102,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 376,
+     "outputTokens": 102,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.0026579999999999998,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.0026579999999999998,
+   "turns": 1,
+   "ms": 2873,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "prose-02",
+   "ok": true,
+   "transcript": "The estate's dual-map decision gate. Its positive/negative maps, the\nnon-compensating (max) aggregator, the TOA hard gate, law-as-evidence\n(never the verdict), PASS/BLOCK/PENDING, the escort weighting at q_E,0\n= 0.7 (a reproducible baseline, not a universal constant), and the\naudit-receipt schema draw on Gary W. Floyd, Lumiea Systems Research\nDivision — ThunderStruck Service LLC — \"From GEP Stabilization to\nDual-Map Ethical Reasoning,\" Derivation v0.2",
+   "usage": {
+    "input_tokens": 422,
+    "output_tokens": 202
+   },
+   "rawUsage": {
+    "input_tokens": 422,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 202,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 422,
+      "output_tokens": 202,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 422,
+     "outputTokens": 202,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.004296,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.004296,
+   "turns": 1,
+   "ms": 5794,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "prose-04",
+   "ok": true,
+   "transcript": "konomify's basis gate runs the check on every build: no declaration, a\nhand-edited or stale map (older than the law, or than 180 days), or a\ndeclared Article 5 practice, and the build does not pass. This\nrepository carries its own: compliance.html. The page's R7 section\nruns the same kernel in the browser.",
+   "usage": {
+    "input_tokens": 376,
+    "output_tokens": 103
+   },
+   "rawUsage": {
+    "input_tokens": 376,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 103,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 376,
+      "output_tokens": 103,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 376,
+     "outputTokens": 103,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.002673,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.002673,
+   "turns": 1,
+   "ms": 2690,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "prose-05",
+   "ok": true,
+   "transcript": "\"We'll automate it with a cloud API instead\": That is the route where\ncustomer data leaves the building: a processor contract with the model\nvendor (GDPR Art 28), transfer assessments (Chapter V), a per-token\nbill — and the Copilot seats are still on every desk. Five years on\nthat route: £3,595,271 — still £2,025,205 more than local-first.",
+   "usage": {
+    "input_tokens": 376,
+    "output_tokens": 121
+   },
+   "rawUsage": {
+    "input_tokens": 376,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 121,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 376,
+      "output_tokens": 121,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 376,
+     "outputTokens": 121,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.002943,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.002943,
+   "turns": 1,
+   "ms": 3151,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "prose-06",
+   "ok": true,
+   "transcript": "Each deployment decision is a dual-map case built from fallfloor's\nreceipted evidence and this design's published policy thresholds: a\npositive map (what the evidence supports) beside a negative map (the\nevidence-supported ways it fails). One severe, evidence-backed failure\nBLOCKs; an unmeasured risk holds at PENDING. Each verdict is sealed\ninto a self-verifying receipt; the page re-verifies them and shows a\nforged verdict being rejected.",
+   "usage": {
+    "input_tokens": 422,
+    "output_tokens": 158
+   },
+   "rawUsage": {
+    "input_tokens": 422,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 158,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 422,
+      "output_tokens": 158,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 422,
+     "outputTokens": 158,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.0036359999999999995,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.0036359999999999995,
+   "turns": 1,
+   "ms": 3562,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "prose-09",
+   "ok": true,
+   "transcript": "comply.mjs (mutation-gated) is the compliance map every estate build\nships. A build declares what it does in compliance.decl.json: does it\nrun an AI system (none / narrow / generative), who built it (provider\nor deployer), where it runs (local / cloud / SaaS), does it touch\npersonal data, talk to the public, generate content, make significant\ndecisions about people, fall under Annex III or Article 5, is its\noutput used in the EU. The kernel returns its EU",
+   "usage": {
+    "input_tokens": 422,
+    "output_tokens": 154
+   },
+   "rawUsage": {
+    "input_tokens": 422,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 154,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 422,
+      "output_tokens": 154,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 422,
+     "outputTokens": 154,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.003576,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.003576,
+   "turns": 1,
+   "ms": 2907,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "prose-11",
+   "ok": true,
+   "transcript": "Go / no-go board, sealed from fallfloor's receipted evidence: 2 PASS ·\n2 BLOCK · 3 PENDING (support-unsupervised BLOCK, support-assisted\nPENDING, screening-auto BLOCK, screening-review PENDING, hr-routing\nPASS, floor-async PASS, credit-decisions PENDING). Board hash\nd9b92b13d58c089eceaadfde00ae06ad8153be55b21c195b41c0e6f9dabef406. <!--\n⟦RESULTS-END⟧ -->",
+   "usage": {
+    "input_tokens": 399,
+    "output_tokens": 193
+   },
+   "rawUsage": {
+    "input_tokens": 399,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 193,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 399,
+      "output_tokens": 193,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 399,
+     "outputTokens": 193,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.004092,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.004092,
+   "turns": 1,
+   "ms": 4052,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "prose-12",
+   "ok": true,
+   "transcript": "Open the live page on a second computer with Chrome or Edge (WebGPU),\nopen Run it yourself, load a model, then swap two codes with a node on\nthe first machine (offer → answer). On the same network no server is\ninvolved; across networks, tick \"use a public STUN server\" (it only\nhelps the two machines find each other's address — no traffic goes\nthrough it). The measured run in this repo used one laptop: every node\nwas a separate Chrome process with its own",
+   "usage": {
+    "input_tokens": 422,
+    "output_tokens": 144
+   },
+   "rawUsage": {
+    "input_tokens": 422,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 144,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 422,
+      "output_tokens": 144,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 422,
+     "outputTokens": 144,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.0034260000000000002,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.0034260000000000002,
+   "turns": 1,
+   "ms": 3285,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "law-01",
+   "ok": true,
+   "transcript": "Deployers shall assign human oversight to natural persons who have the\nnecessary competence, training and authority … keep the logs\nautomatically generated by that high-risk AI system … of at least six\nmonths deployers of high-risk AI systems referred to in points 5 (b)\nand (c) of Annex III, shall perform an assessment of the impact on\nfundamental rights",
+   "usage": {
+    "input_tokens": 399,
+    "output_tokens": 115
+   },
+   "rawUsage": {
+    "input_tokens": 399,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 115,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 399,
+      "output_tokens": 115,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 399,
+     "outputTokens": 115,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.002922,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.002922,
+   "turns": 1,
+   "ms": 2422,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "law-02",
+   "ok": true,
+   "transcript": "providers and deployers of AI systems that have their place of\nestablishment or are located in a third country, where the output\nproduced by the AI system is used in the Union 'putting into service'\nmeans the supply of an AI system for first use directly to the\ndeployer or for own use in the Union for its intended purpose",
+   "usage": {
+    "input_tokens": 376,
+    "output_tokens": 90
+   },
+   "rawUsage": {
+    "input_tokens": 376,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 90,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 376,
+      "output_tokens": 90,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 376,
+     "outputTokens": 90,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.002478,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.002478,
+   "turns": 1,
+   "ms": 2550,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "law-03",
+   "ok": true,
+   "transcript": "Providers and deployers of AI systems shall take measures to support\nthe development of AI literacy of their staff and other persons\ndealing with the operation and use of AI systems on their behalf\nProviders shall ensure that AI systems intended to interact directly\nwith natural persons are designed and developed in such a way that the\nnatural persons concerned are informed that they are interacting with\nan AI system",
+   "usage": {
+    "input_tokens": 422,
+    "output_tokens": 120
+   },
+   "rawUsage": {
+    "input_tokens": 422,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 120,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 422,
+      "output_tokens": 120,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 422,
+     "outputTokens": 120,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.003066,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.003066,
+   "turns": 1,
+   "ms": 3085,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "law-04",
+   "ok": true,
+   "transcript": "Processing shall be lawful only if and to the extent that at least one\nof the following applies EU: \"the right not to be subject to a\ndecision based solely on automated processing … which produces legal\neffects … or similarly significantly affects him or her\". UK:\nsafeguards must \"enable the data subject to obtain human intervention\n… [and] to contest such decisions\" (Art 22C(2))",
+   "usage": {
+    "input_tokens": 399,
+    "output_tokens": 121
+   },
+   "rawUsage": {
+    "input_tokens": 399,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 121,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 399,
+      "output_tokens": 121,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 399,
+     "outputTokens": 121,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.003012,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.003012,
+   "turns": 1,
+   "ms": 2967,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "law-06",
+   "ok": true,
+   "transcript": "EU: “the right not to be subject to a decision based solely on\nautomated processing … which produces legal effects … or similarly\nsignificantly affects him or her”. UK: safeguards must “enable the\ndata subject to obtain human intervention … [and] to contest such\ndecisions” (Art 22C(2))",
+   "usage": {
+    "input_tokens": 376,
+    "output_tokens": 96
+   },
+   "rawUsage": {
+    "input_tokens": 376,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 96,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 376,
+      "output_tokens": 96,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 376,
+     "outputTokens": 96,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.002568,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.002568,
+   "turns": 1,
+   "ms": 2997,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "law-08",
+   "ok": true,
+   "transcript": "(b) AI systems intended to be used to evaluate the creditworthiness of\nnatural persons or establish their credit score, with the exception of\nAI systems used for the purpose of detecting financial fraud Deployers\nshall assign human oversight to natural persons who have the necessary\ncompetence, training and authority … keep the logs automatically\ngenerated by that high-risk AI system … of at least six months",
+   "usage": {
+    "input_tokens": 399,
+    "output_tokens": 124
+   },
+   "rawUsage": {
+    "input_tokens": 399,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 124,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 399,
+      "output_tokens": 124,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 399,
+     "outputTokens": 124,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.003057,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.003057,
+   "turns": 1,
+   "ms": 4219,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "law-11",
+   "ok": true,
+   "transcript": "The following AI practices shall be prohibited: providers and\ndeployers of AI systems that have their place of establishment or are\nlocated in a third country, where the output produced by the AI system\nis used in the Union 'putting into service' means the supply of an AI\nsystem for first use directly to the deployer or for own use in the\nUnion for its intended purpose",
+   "usage": {
+    "input_tokens": 399,
+    "output_tokens": 105
+   },
+   "rawUsage": {
+    "input_tokens": 399,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 105,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 399,
+      "output_tokens": 105,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 399,
+     "outputTokens": 105,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.002772,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.002772,
+   "turns": 1,
+   "ms": 2784,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "law-12",
+   "ok": true,
+   "transcript": "Providers of AI systems, including general-purpose AI systems,\ngenerating synthetic audio, image, video or text content, shall ensure\nthat the outputs of the AI system are marked in a machine-readable\nformat and detectable as artificially generated or manipulated. (b) AI\nsystems intended to be used to evaluate the creditworthiness of\nnatural persons or establish their credit score, with the exception of\nAI systems used for the purpose of detecting",
+   "usage": {
+    "input_tokens": 422,
+    "output_tokens": 142
+   },
+   "rawUsage": {
+    "input_tokens": 422,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 142,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 422,
+      "output_tokens": 142,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 422,
+     "outputTokens": 142,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.0033959999999999997,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.0033959999999999997,
+   "turns": 1,
+   "ms": 6895,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "code-01",
+   "ok": true,
+   "transcript": "// NON-MASKING (v0.3): a composite is only as sound as its weakest\npart. A clean `main` that imports a\n// broken sub-module used to PASS — the stable half masked the runaway\nhalf (the same bug class as a\n// vacuous payload-hash: `elite ≠ correct` hiding inside a green\naggregate). So we gate every top-level",
+   "usage": {
+    "input_tokens": 399,
+    "output_tokens": 119
+   },
+   "rawUsage": {
+    "input_tokens": 399,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 119,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 399,
+      "output_tokens": 119,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 399,
+     "outputTokens": 119,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.0029820000000000003,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.0029820000000000003,
+   "turns": 1,
+   "ms": 2621,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "code-03",
+   "ok": true,
+   "transcript": "lines.push({ id: 'local-power', side: 'local', label: 'Electricity for\nthe AI work on the laptops (' +\nMath.round(cap.perYear[0].laptopHours).toLocaleString('en-GB') + '\nlaptop-hours a month in year 1)', basis: 'estimate', why:\n'laptop-hours (measured and fitted) × ' + fl.watts.value + ' W × ' +\nel.pencePerKwh + 'p/kWh (DESNZ non-domestic), rising with CPI',\nperYear: Y((i) => cap.perYear[i].laptopHours * 12 * fl.watts.value /\n1000 * el.pencePerKwh / 100",
+   "usage": {
+    "input_tokens": 445,
+    "output_tokens": 246
+   },
+   "rawUsage": {
+    "input_tokens": 445,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 246,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 445,
+      "output_tokens": 246,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 445,
+     "outputTokens": 246,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.005025,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.005025,
+   "turns": 1,
+   "ms": 3613,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "code-05",
+   "ok": true,
+   "transcript": "<div style=\"max-width:520px\">\n<div style=\"letter-spacing:.2em;color:#8b93a7;font-size:11px\">KONOMI RECEIPT · niceassos-mesh</div>\n<h1 style=\"font:400 30px Georgia,serif;color:#a78bfa;margin:10px 0 4px\">${repo}</h1>\n<div style=\"color:#4ade80\">konomified — metabolized to spec, grafted to the mesh</div>",
+   "usage": {
+    "input_tokens": 422,
+    "output_tokens": 153
+   },
+   "rawUsage": {
+    "input_tokens": 422,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 153,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 422,
+      "output_tokens": 153,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 422,
+     "outputTokens": 153,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.003561,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.003561,
+   "turns": 1,
+   "ms": 2909,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "code-07",
+   "ok": true,
+   "transcript": "basis: grounds ? { compliance: grounds.compliance ?? null, prices:\ngrounds.prices ?? null } : null,\n};\n\n// CARD — mint the receipt as a fallkard card, if the forge stages are\nwired.\nlet card = null;\nif (typeof forge === 'function' && typeof renderCard === 'function') {",
+   "usage": {
+    "input_tokens": 445,
+    "output_tokens": 138
+   },
+   "rawUsage": {
+    "input_tokens": 445,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 138,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 445,
+      "output_tokens": 138,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 445,
+     "outputTokens": 138,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.0034049999999999996,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.0034049999999999996,
+   "turns": 1,
+   "ms": 2783,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "code-08",
+   "ok": true,
+   "transcript": "let bestTier = MINIMAL.tier, bestLabel = MINIMAL.label;\nfor (const tier of RULES) {\nfor (const trig of tier.triggers) {\nif (trig.re.test(t)) hits.push({ tier: tier.tier, note: trig.note,\nart: trig.art });\n}\nif (hits.some((h) => h.tier === tier.tier)) { bestTier = tier.tier;\nbestLabel = tier.label; break; }",
+   "usage": {
+    "input_tokens": 445,
+    "output_tokens": 166
+   },
+   "rawUsage": {
+    "input_tokens": 445,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 166,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 445,
+      "output_tokens": 166,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 445,
+     "outputTokens": 166,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.003825,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.003825,
+   "turns": 1,
+   "ms": 3555,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "code-09",
+   "ok": true,
+   "transcript": "```\nconst fail = (why) => ({ ok: false, why });\n\n//\n============================================================================\n============================\n\n// SOURCED FIGURES — nothing enters the cost model without saying\nwhere it came from\n//\n============================================================================\n============================\n```",
+   "usage": {
+    "input_tokens": 491,
+    "output_tokens": 76
+   },
+   "rawUsage": {
+    "input_tokens": 491,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 76,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 491,
+      "output_tokens": 76,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 491,
+     "outputTokens": 76,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.002613,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.002613,
+   "turns": 1,
+   "ms": 2579,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "code-10",
+   "ok": true,
+   "transcript": "```\ndv.setUint32(padded.length - 4, bitLen >>> 0);\nlet h0 = 0x6a09e667, h1 = 0xbb67ae85, h2 = 0x3c6ef372, h3 =\n0xa54ff53a;\nlet h4 = 0x510e527f, h5 = 0x9b05688c, h6 = 0x1f83d9ab, h7 =\n0x5be0cd19;\nconst w = new Uint32Array(64);\nfor (let i = 0; i < padded.length; i += 64) {\nfor (let t = 0; t < 16; t++) w[t] = dv.getUint32(i + t * 4);\n```",
+   "usage": {
+    "input_tokens": 445,
+    "output_tokens": 218
+   },
+   "rawUsage": {
+    "input_tokens": 445,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 218,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 445,
+      "output_tokens": 218,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 445,
+     "outputTokens": 218,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.004605,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.004605,
+   "turns": 1,
+   "ms": 3465,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "code-12",
+   "ok": true,
+   "transcript": "```\n//                              tests. A surviving mutant is a line the tests\ndo not actually guard.\n//   3. THE GATE      — not admissible, OR mutants survived? STOP.\nReport what is undercooked and send\n//                              it back to the pan. Waste is NOT grown into\nan organ. The honest edge: konomify\n```",
+   "usage": {
+    "input_tokens": 399,
+    "output_tokens": 108
+   },
+   "rawUsage": {
+    "input_tokens": 399,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 108,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 399,
+      "output_tokens": 108,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 399,
+     "outputTokens": 108,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.002817,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.002817,
+   "turns": 1,
+   "ms": 2975,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "json-01",
+   "ok": true,
+   "transcript": "{\"id\":\"ons-cpi\",\"kind\":\"rate\",\"value\":0.031,\"what\":\"UK Consumer Prices\nIndex, 12-month rate to August 2026\",\"quote\":\"The Consumer Prices\nIndex (CPI) rose by 3.1% in the 12 months to August\n2026\",\"publisher\":\"ONS, Consumer price inflation, UK: August 2026\n(released 16 September\n2026)\",\"source\":\"https://www.ons.gov.uk/economy/inflationandpriceindic\nes/bulletins/consumerpriceinflation/august2026\",\"checked\":\"2026-09-29\"\n,\"how\":\"Applied every year to seats",
+   "usage": {
+    "input_tokens": 445,
+    "output_tokens": 251
+   },
+   "rawUsage": {
+    "input_tokens": 445,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 251,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 445,
+      "output_tokens": 251,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 445,
+     "outputTokens": 251,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.0050999999999999995,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.0050999999999999995,
+   "turns": 1,
+   "ms": 4171,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "json-02",
+   "ok": true,
+   "transcript": "{\"id\":\"salesforce-pro-suite\",\"kind\":\"saas\",\"vendor\":\"Salesforce\",\"prod\nuct\":\"Salesforce Pro\nSuite\",\"function\":\"crm\",\"price\":80,\"currency\":\"GBP\",\"per\":\"user /\nmonth, billed annually\",\"vat\":\"not stated\",\"quote\":\"£ 80\nGBP/User/Month (Billed annually)\",\"note\":\"The flexible CRM suite\nacross sales, service, marketing and commerce; the cheapest paid suite\nabove the small-team\nStarter.\",\"source\":\"https://www.salesforce.com/uk/sales/pricing/\",\"che\ncked\":\"2026-09-30\"}",
+   "usage": {
+    "input_tokens": 468,
+    "output_tokens": 208
+   },
+   "rawUsage": {
+    "input_tokens": 468,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 208,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 468,
+      "output_tokens": 208,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 468,
+     "outputTokens": 208,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.004524,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.004524,
+   "turns": 1,
+   "ms": 3142,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "json-03",
+   "ok": true,
+   "transcript": "{\"id\":\"salesforce-2025-rise\",\"kind\":\"rise\",\"what\":\"Salesforce raised\nlist prices for its Enterprise and Unlimited editions of Sales Cloud,\nService Cloud, Field Service and select Industries Clouds by an\naverage of 6% on 1 August 2025; Starter and Pro editions were not\nchanged.\",\"quote\":\"On August 1, 2025, list prices will increase by an\naverage of\n6%.\",\"low\":0.06,\"high\":0.06,\"source\":\"https://www.salesforce.com/news/\nstories/pricing-update-2025/\"",
+   "usage": {
+    "input_tokens": 445,
+    "output_tokens": 190
+   },
+   "rawUsage": {
+    "input_tokens": 445,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 190,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 445,
+      "output_tokens": 190,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 445,
+     "outputTokens": 190,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.0041849999999999995,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.0041849999999999995,
+   "turns": 1,
+   "ms": 3230,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "json-06",
+   "ok": true,
+   "transcript": "{\"id\":\"dynamics-365-finance\",\"kind\":\"saas\",\"vendor\":\"Microsoft\",\"product\":\"Dynamics 365\nFinance\",\"function\":\"finance\",\"price\":161.5,\"currency\":\"GBP\",\"per\":\"user / month, paid yearly\",\"vat\":\"excluded\",\"quote\":\"£161.50 user/month, paid yearly … Price does not include\nVAT.\",\"source\":\"https://www.microsoft.com/en-gb/dynamics-365/products/finance/pricing\",\"checked\":\"2026-09-30\"}",
+   "usage": {
+    "input_tokens": 422,
+    "output_tokens": 169
+   },
+   "rawUsage": {
+    "input_tokens": 422,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 169,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 422,
+      "output_tokens": 169,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 422,
+     "outputTokens": 169,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.0038009999999999997,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.0038009999999999997,
+   "turns": 1,
+   "ms": 3646,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "json-07",
+   "ok": true,
+   "transcript": "{\"id\":\"chatgpt-business\",\"kind\":\"seat\",\"product\":\"ChatGPT Business\n(standard seat)\",\"price\":15,\"currency\":\"GBP\",\"per\":\"seat / month,\nbilled annually\",\"vat\":\"not stated\",\"quote\":\"Standard seat £15 / month\n… £15/month if billed\nannually.\",\"addOn\":null,\"maxSeats\":null,\"source\":\"https://chatgpt.com/\npricing/\",\"checked\":\"2026-09-29\"}",
+   "usage": {
+    "input_tokens": 399,
+    "output_tokens": 196
+   },
+   "rawUsage": {
+    "input_tokens": 399,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 196,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 399,
+      "output_tokens": 196,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 399,
+     "outputTokens": 196,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.004137,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.004137,
+   "turns": 1,
+   "ms": 3146,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "json-09",
+   "ok": true,
+   "transcript": "{\"id\":\"claude-team\",\"kind\":\"seat\",\"product\":\"Claude Team (standard\nseat)\",\"price\":18,\"currency\":\"GBP\",\"per\":\"seat / month, billed\nannually\",\"vat\":\"included\",\"quote\":\"For teams of 2 to 150 … £18 Per\nseat / month if billed annually … Prices include 20%\nVAT\",\"addOn\":null,\"maxSeats\":150,\"source\":\"https://claude.com/pricing\"\n,\"checked\":\"2026-09-29\"}",
+   "usage": {
+    "input_tokens": 399,
+    "output_tokens": 177
+   },
+   "rawUsage": {
+    "input_tokens": 399,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 177,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 399,
+      "output_tokens": 177,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 399,
+     "outputTokens": 177,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.0038519999999999995,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.0038519999999999995,
+   "turns": 1,
+   "ms": 4279,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "json-10",
+   "ok": true,
+   "transcript": "{\"id\":\"ofgem-price-cap-2026-q4\",\"kind\":\"energy\",\"pencePerKwh\":26.32,\"p\neriod\":\"1 October to 31 December 2026\",\"how\":\"Ofgem energy price cap,\nGB average electricity unit rate, Direct Debit. The page states there\nis no VAT on electricity from 1 October 2026 to 31 March\n2027.\",\"source\":\"https://www.ofgem.gov.uk/your-energy-supply/your-ener\ngy-bill/energy-price-cap-unit-rates-and-standing-charges\",\"checked\":\"2\n026-09-29\"}",
+   "usage": {
+    "input_tokens": 422,
+    "output_tokens": 220
+   },
+   "rawUsage": {
+    "input_tokens": 422,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 220,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 422,
+      "output_tokens": 220,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 422,
+     "outputTokens": 220,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.004566,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.004566,
+   "turns": 1,
+   "ms": 3638,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "json-11",
+   "ok": true,
+   "transcript": "{\"id\":\"ons-ashe-2025-it-salaries\",\"kind\":\"salaries\",\"what\":\"ONS,\nAnnual Survey of Hours and Earnings 2025 (provisional), Table 14.7a,\nmedian gross annual pay, full-time employee jobs, United\nKingdom\",\"source\":\"https://www.ons.gov.uk/employmentandlabourmarket/pe\nopleinwork/earningsandworkinghours/datasets/occupation4digitsoc2010ash\netable14\",\"checked\":\"2026-09-29\",\"roles\":{\"2132\":{\"title\":\"IT\nmanagers\",\"median\":56438},\"2133\":{\"title\":\"IT business analysts",
+   "usage": {
+    "input_tokens": 422,
+    "output_tokens": 215
+   },
+   "rawUsage": {
+    "input_tokens": 422,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 215,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 422,
+      "output_tokens": 215,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 422,
+     "outputTokens": 215,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.004491,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.004491,
+   "turns": 1,
+   "ms": 2978,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "keyvalue-01",
+   "ok": true,
+   "transcript": "id=boe-inflation-target\nkind=rate\nvalue=0.02\nwhat=The UK inflation target the Government sets the Bank of England —\nused only in the sensitivity table\nquote=The Government sets us a 2% inflation target\nsource=https://www.bankofengland.co.uk/monetary-policy/inflation\nchecked=2026-09-29",
+   "usage": {
+    "input_tokens": 445,
+    "output_tokens": 113
+   },
+   "rawUsage": {
+    "input_tokens": 445,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 113,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 445,
+      "output_tokens": 113,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 445,
+     "outputTokens": 113,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.0030299999999999997,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.0030299999999999997,
+   "turns": 1,
+   "ms": 3150,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "keyvalue-02",
+   "ok": true,
+   "transcript": "id=dynamics-365-finance\nkind=saas\nvendor=Microsoft\nproduct=Dynamics 365 Finance\nfunction=finance\nprice=161.5\ncurrency=GBP\nper=user / month, paid yearly\nvat=excluded\nquote=£161.50 user/month, paid yearly … Price does not include VAT.\nsource=https://www.microsoft.com/en-gb/dynamics-365/products/finance/pricing\nchecked=2026-09-30",
+   "usage": {
+    "input_tokens": 537,
+    "output_tokens": 152
+   },
+   "rawUsage": {
+    "input_tokens": 537,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 152,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 537,
+      "output_tokens": 152,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 537,
+     "outputTokens": 152,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.003891,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.003891,
+   "turns": 1,
+   "ms": 4561,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "keyvalue-03",
+   "ok": true,
+   "transcript": "id=intel-i7-1255u-power\nkind=power\nwattsLow=15\nwattsHigh=55\nchip=Intel Core i7-1255U\nhow=Intel's published figures for the chip: Processor Base Power 15 W\n(the rated sustained power) and Maximum Turbo Power 55 W. The model\nuses 15 W for the extra draw of AI work on a laptop that is already on\nfor the employee — change it on the page.",
+   "usage": {
+    "input_tokens": 468,
+    "output_tokens": 155
+   },
+   "rawUsage": {
+    "input_tokens": 468,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 155,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 468,
+      "output_tokens": 155,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 468,
+     "outputTokens": 155,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.0037289999999999997,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.0037289999999999997,
+   "turns": 1,
+   "ms": 3657,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "keyvalue-04",
+   "ok": true,
+   "transcript": "id=microsoft-365-2026-rise\nkind=rise\nwhat=Microsoft's 1 July 2026 update raised Microsoft 365 plan prices —\nfrom 5% (Microsoft 365 E5, US$57 to US$60) to 33% (Microsoft 365 F1,\nUS$2.25 to US$3.00). Microsoft 365 Copilot is not among the plans in\nthat price table: the Copilot seat on this page is Microsoft's current\nUK list price.\nquote=Pricing updates take effect July 1, 2026.\nlow=0.05\nhigh=0.33",
+   "usage": {
+    "input_tokens": 491,
+    "output_tokens": 192
+   },
+   "rawUsage": {
+    "input_tokens": 491,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 192,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 491,
+      "output_tokens": 192,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 491,
+     "outputTokens": 192,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.004353,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.004353,
+   "turns": 1,
+   "ms": 3047,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "keyvalue-05",
+   "ok": true,
+   "transcript": "```\nid=salesforce-pro-suite\nkind=saas\nvendor=Salesforce\nproduct=Salesforce Pro Suite\nfunction=crm\nprice=80\ncurrency=GBP\nper=user / month, billed annually\nvat=not stated\nquote=£ 80 GBP/User/Month (Billed annually)\nnote=The flexible CRM suite across sales, service, marketing and\ncommerce; the cheapest paid suite above the small-team Starter.\nsource=https://www.salesforce.com/uk/sales/pricing/\nchecked=2026-09-30\n```",
+   "usage": {
+    "input_tokens": 560,
+    "output_tokens": 185
+   },
+   "rawUsage": {
+    "input_tokens": 560,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 185,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 560,
+      "output_tokens": 185,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 560,
+     "outputTokens": 185,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.004455,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.004455,
+   "turns": 1,
+   "ms": 3801,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "keyvalue-06",
+   "ok": true,
+   "transcript": "id=ons-ashe-2025-it-salaries\nkind=salaries\nwhat=ONS, Annual Survey of Hours and Earnings 2025 (provisional), Table 14.7a, median gross annual pay, full-time employee jobs, United Kingdom\nsource=https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/datasets/occupation4digitsoc2010ashetable14\nchecked=2026-09-29\nroles.2132.title=IT managers\nroles.2132.median=56438",
+   "usage": {
+    "input_tokens": 491,
+    "output_tokens": 186
+   },
+   "rawUsage": {
+    "input_tokens": 491,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 186,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 491,
+      "output_tokens": 186,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 491,
+     "outputTokens": 186,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.004262999999999999,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.004262999999999999,
+   "turns": 1,
+   "ms": 3351,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "keyvalue-07",
+   "ok": true,
+   "transcript": "id=chatgpt-business\nkind=seat\nproduct=ChatGPT Business (standard seat)\nprice=15\ncurrency=GBP\nper=seat / month, billed annually\nvat=not stated\nquote=Standard seat £15 / month … £15/month if billed annually.\naddOn=null\nmaxSeats=null\nsource=https://chatgpt.com/pricing/\nchecked=2026-09-29",
+   "usage": {
+    "input_tokens": 514,
+    "output_tokens": 130
+   },
+   "rawUsage": {
+    "input_tokens": 514,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 130,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 514,
+      "output_tokens": 130,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 514,
+     "outputTokens": 130,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.003492,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.003492,
+   "turns": 1,
+   "ms": 3015,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "keyvalue-09",
+   "ok": true,
+   "transcript": "```\nid=claude-team\nkind=seat\nproduct=Claude Team (standard seat)\nprice=18\ncurrency=GBP\nper=seat / month, billed annually\nvat=included\nquote=For teams of 2 to 150 … £18 Per seat / month if billed annually\n… Prices include 20% VAT\naddOn=null\nmaxSeats=150\nsource=https://claude.com/pricing\nchecked=2026-09-29\n```",
+   "usage": {
+    "input_tokens": 537,
+    "output_tokens": 139
+   },
+   "rawUsage": {
+    "input_tokens": 537,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 139,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 537,
+      "output_tokens": 139,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 537,
+     "outputTokens": 139,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.003696,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.003696,
+   "turns": 1,
+   "ms": 3009,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "csv-01",
+   "ok": true,
+   "transcript": "id,kind,figure,currency,checked\nchatgpt-business,seat,15,GBP,2026-09-29\nclaude-enterprise,seat,20,USD,2026-09-29\nclaude-team,seat,18,GBP,2026-09-29\ngpt-5-nano,api,0.05,USD,2026-09-29\ngpt-5-mini,api,0.25,USD,2026-09-29\ngemini-3.1-flash-lite,api,0.25,USD,2026-09-29\nclaude-haiku-4.5,api,1,USD,2026-09-29",
+   "usage": {
+    "input_tokens": 445,
+    "output_tokens": 188
+   },
+   "rawUsage": {
+    "input_tokens": 445,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 188,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 445,
+      "output_tokens": 188,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 445,
+     "outputTokens": 188,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.004155,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.004155,
+   "turns": 1,
+   "ms": 4715,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "csv-03",
+   "ok": true,
+   "transcript": "id,kind,figure,currency,checked\ngpt-5-nano,api,0.05,USD,2026-09-29\ngpt-5-mini,api,0.25,USD,2026-09-29\ngemini-3.1-flash-lite,api,0.25,USD,2026-09-29\nclaude-haiku-4.5,api,1,USD,2026-09-29\nclaude-sonnet-5,api,2,USD,2026-09-29\nuk-vat,rate,0.2,,2026-09-29\nfx-gbp-usd,fx,0.75396,,2026-09-29",
+   "usage": {
+    "input_tokens": 445,
+    "output_tokens": 191
+   },
+   "rawUsage": {
+    "input_tokens": 445,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 191,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 445,
+      "output_tokens": 191,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 445,
+     "outputTokens": 191,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.0042,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.0042,
+   "turns": 1,
+   "ms": 3371,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "csv-04",
+   "ok": true,
+   "transcript": "id,kind,figure,currency,checked\nofgem-price-cap-2026-q4,energy,26.32,,2026-09-29\nsalesforce-pro-suite,saas,80,GBP,2026-09-30\nsalesforce-core,saas,156,GBP,2026-09-30\ndynamics-365-finance,saas,161.5,GBP,2026-09-30\ndynamics-365-human-resources,saas,103.8,GBP,2026-09-30\nsalesforce-2025-rise,rise,0.06,,2026-09-30",
+   "usage": {
+    "input_tokens": 422,
+    "output_tokens": 180
+   },
+   "rawUsage": {
+    "input_tokens": 422,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 180,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 422,
+      "output_tokens": 180,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 422,
+     "outputTokens": 180,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.003966,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.003966,
+   "turns": 1,
+   "ms": 3357,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "csv-05",
+   "ok": true,
+   "transcript": "id,kind,figure,currency,checked\nuk-vat,rate,0.2,,2026-09-29\nfx-gbp-usd,fx,0.75396,,2026-09-29\ndesnz-electricity-nondomestic,energy,24.51,,2026-09-29\nintel-i7-1255u-power,power,15,,2026-09-29\nons-ashe-2025-it-salaries,salaries,,,2026-09-29\nons-cpi,rate,0.031,,2026-09-29\nuk-national-living-wage,rate,12.71,,2026-09-29",
+   "usage": {
+    "input_tokens": 445,
+    "output_tokens": 191
+   },
+   "rawUsage": {
+    "input_tokens": 445,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 191,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 445,
+      "output_tokens": 191,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 445,
+     "outputTokens": 191,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.0042,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.0042,
+   "turns": 1,
+   "ms": 3599,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "csv-08",
+   "ok": true,
+   "transcript": "id,kind,figure,currency,checked\nm365-copilot,seat,23.1,GBP,2026-09-29\nchatgpt-business,seat,15,GBP,2026-09-29\nclaude-enterprise,seat,20,USD,2026-09-29\nclaude-team,seat,18,GBP,2026-09-29\ngpt-5-nano,api,0.05,USD,2026-09-29\ngpt-5-mini,api,0.25,USD,2026-09-29\ngemini-3.1-flash-lite,api,0.25,USD,2026-09-29",
+   "usage": {
+    "input_tokens": 445,
+    "output_tokens": 188
+   },
+   "rawUsage": {
+    "input_tokens": 445,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 188,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 445,
+      "output_tokens": 188,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 445,
+     "outputTokens": 188,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.004155,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.004155,
+   "turns": 1,
+   "ms": 3593,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "csv-09",
+   "ok": true,
+   "transcript": "id,kind,figure,currency,checked\nboe-inflation-target,rate,0.02,,2026-09-29\nmicrosoft-365-2026-rise,rise,0.05,,2026-09-29\ngpt-4o-mini,api,0.15,USD,2026-09-29\nofgem-price-cap-2026-q4,energy,26.32,,2026-09-29\nsalesforce-pro-suite,saas,80,GBP,2026-09-30\nsalesforce-core,saas,156,GBP,2026-09-30",
+   "usage": {
+    "input_tokens": 422,
+    "output_tokens": 174
+   },
+   "rawUsage": {
+    "input_tokens": 422,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 174,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 422,
+      "output_tokens": 174,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 422,
+     "outputTokens": 174,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.003876,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.003876,
+   "turns": 1,
+   "ms": 3417,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "csv-11",
+   "ok": true,
+   "transcript": "id,kind,figure,currency,checked\nclaude-team,seat,18,GBP,2026-09-29\ngpt-5-nano,api,0.05,USD,2026-09-29\ngpt-5-mini,api,0.25,USD,2026-09-29\ngemini-3.1-flash-lite,api,0.25,USD,2026-09-29\nclaude-haiku-4.5,api,1,USD,2026-09-29\nclaude-sonnet-5,api,2,USD,2026-09-29\nuk-vat,rate,0.2,,2026-09-29",
+   "usage": {
+    "input_tokens": 445,
+    "output_tokens": 186
+   },
+   "rawUsage": {
+    "input_tokens": 445,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 186,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 445,
+      "output_tokens": 186,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 445,
+     "outputTokens": 186,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.004125,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.004125,
+   "turns": 1,
+   "ms": 3299,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "csv-12",
+   "ok": true,
+   "transcript": "id,kind,figure,currency,checked\ngemini-3.1-flash-lite,api,0.25,USD,2026-09-29\nclaude-haiku-4.5,api,1,USD,2026-09-29\nclaude-sonnet-5,api,2,USD,2026-09-29\nuk-vat,rate,0.2,,2026-09-29\nfx-gbp-usd,fx,0.75396,,2026-09-29\ndesnz-electricity-nondomestic,energy,24.51,,2026-09-29\nintel-i7-1255u-power,power,15,,2026-09-29",
+   "usage": {
+    "input_tokens": 445,
+    "output_tokens": 194
+   },
+   "rawUsage": {
+    "input_tokens": 445,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 194,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 445,
+      "output_tokens": 194,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 445,
+     "outputTokens": 194,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.004245,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.004245,
+   "turns": 1,
+   "ms": 3420,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "hex-01",
+   "ok": true,
+   "transcript": "427b35e2a0303e2496d1bd1fb17e4ff1554c1cbe4d7405cba96d73e1654e83fca8ac80\nc82ba3ad919fa1e95741bd44dfd6b67faae3298bf9a68dcbfae114f85761b8680f5381\nbb4f4317750659a1bbcc1abfa91882476985155c6f3c7d14f3461a6a372220566ca17c\n05038c8ce6e57a7d67f812e661816d3b4cd44f57368a9a8acf15f840d9fcc5048bd2ee\n02a5be816bf5b79bcfff8f588934a122dbe3b2a4279609a493f8b9bc6b6c1f4b228cb3\n1c6f1bf2ce7afd017aa0ba1ddf71b088e8ca02b01fe5ded73b12d0c641f2de01ac544d\n394f8abcecb10ae2736622654d1869d855add756",
+   "usage": {
+    "input_tokens": 422,
+    "output_tokens": 322
+   },
+   "rawUsage": {
+    "input_tokens": 422,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 322,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 422,
+      "output_tokens": 322,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 422,
+     "outputTokens": 322,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.006096,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.006096,
+   "turns": 1,
+   "ms": 4284,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "hex-04",
+   "ok": true,
+   "transcript": "81daa41779ff3df58a5611c7faef1a4c32549c3b8152fdbf105193fd9b399026efa441\n8d0a6b6b81f34d35dca2ed57a66ea475d185d04a9ae214c5c518b2a770933913703191\n25b72d53536e871fe79b51c5fcd0f7c1139a9bcc0b9b212b8fad0350d521681792b8bb\n818e2ee5f6b3e72e04f7f5e0d757e7055b322a8ab77ad27aa962f6cb264a0019256e48\n4aca712af7be0422c57ab67e9f352ee37c9bf5adbc0423b966cec09331c4035f733945\n27833c7d384685938a9dd5e6562d0575d21a9b4dbf541eb666db482d4f42f9f2cdf4af\n2dca28d7aea5a673ad6538a0fec38d0c7dd620f9",
+   "usage": {
+    "input_tokens": 422,
+    "output_tokens": 312
+   },
+   "rawUsage": {
+    "input_tokens": 422,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 312,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 422,
+      "output_tokens": 312,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 422,
+     "outputTokens": 312,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.005946,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.005946,
+   "turns": 1,
+   "ms": 3995,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "hex-05",
+   "ok": true,
+   "transcript": "b727b1d7a52b100efbcf2aa40f3139bee71c7c1a2a895dbe63b90838aa86353e365133\nc5d68602b97922428b8845ed43d237b94866755ff7e7f020eab6a65ea70c0907e1d385\nd2fd8aa8ca600e068491b45c4900f5b7d33c6e54e42badf78247494ba43cad05a43a4e\n4f4e7c5fcb2c2c182b4e306c5933c81afea761ba5de71e628233a2caebbc039aa91dae\nb55bcd4d73fe3217f8a683e2cebc4b7d0ed92927b113ce6e97d05cfd7fd340855d494b\ne806583c4ea5cbce1dc5027d99ac7403dd221a0ccf501825916cacf980f6b42ba5e55e\n94adaa3887022be41a488768e539ad7fe4b99eba",
+   "usage": {
+    "input_tokens": 422,
+    "output_tokens": 312
+   },
+   "rawUsage": {
+    "input_tokens": 422,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 312,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 422,
+      "output_tokens": 312,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 422,
+     "outputTokens": 312,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.005946,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.005946,
+   "turns": 1,
+   "ms": 3984,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "hex-06",
+   "ok": true,
+   "transcript": "3778d50de056108e244ae89f9dbbd30542c5e5f61c1a977213c3983bfd88df40eedcbf\n286035d04d7a3c992b3febb82b807fbaf2f5d3d53434afd7b915aa4fc8d33130e0f5d8\ne63bb2547b170c30e15a2991d138f03ffa6be7c91d852f2b8a019f2e20610bbf69412d\n44683ae453a7ab3ca01196af57eb92136700fe714814ce6bb74cea368aa552bb6abc8e\na6c651fe908530e62f15ba27240a159aa977c303c8949128ef0cd1039680b2430e4217\n54238f5bae4cd339cb457d74644cf2040cc947ff24e520a7c530c19d09a17156a89b04\n82588a46afdb4875922733350a09e0af2f35f1340",
+   "usage": {
+    "input_tokens": 422,
+    "output_tokens": 299
+   },
+   "rawUsage": {
+    "input_tokens": 422,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 299,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 422,
+      "output_tokens": 299,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 422,
+     "outputTokens": 299,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.005751,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.005751,
+   "turns": 1,
+   "ms": 5672,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "hex-07",
+   "ok": true,
+   "transcript": "fe2e5f539be986948e8de25050ab5de916ff524e75d65578f9a6dac87a3fe1eecce0de\n1213798860bd7c3a1f5f15092d98a9a6bc54c95c9069923f4d52d6c4ad9af003ebfe5e\ncc9e8ea28c58ec709553fbaaa35f15d03891bd516dc3fcd6d42797bcead460f2638999\n3af221e372dbc97a945f377422d18f3b8a8a2edf23e213919c6dbb850c34314b14cb1c\nab51aebac1a4a15259bda29af6bb007a9a081cff4a53bcd9a5e656fddf55b689846bde\nbf7d5ebc46a65977b00e481a6924b4f7c3add9c86d2acb034f7f61e239449a1d69ed2c\n25a7c1f021fe820507b7",
+   "usage": {
+    "input_tokens": 422,
+    "output_tokens": 302
+   },
+   "rawUsage": {
+    "input_tokens": 422,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 302,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 422,
+      "output_tokens": 302,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 422,
+     "outputTokens": 302,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.005796,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.005796,
+   "turns": 1,
+   "ms": 9082,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "hex-09",
+   "ok": true,
+   "transcript": "76fec769c978b8e893744e8603c03940ab667a90dd2d9888ec709547438c776a1e1dd6\n088129fcff0757ceb71a0b372327d178467bf13724cb5ed57427b4be38e615dd5341078\n1af2ee3d0f1870c41da895ce4f11c90abd0438c36f22fad70111b628852dde27cbd385\nb312299266c74a41525f1119256a48f6c18c9ebe6bec29bf9a9a271f8d71fbedc3c09c\n4193902d4127d4207f8cec2267c309f09a5a1d424531feeafbe63639d2ff2113293b01\nd5aad9010888db63feb060de703f065c70b3558569490bec58d0efc5a3fe33294daf98\n9dda0ab8e54ebc815580f775d4f44dce4dc5801",
+   "usage": {
+    "input_tokens": 422,
+    "output_tokens": 291
+   },
+   "rawUsage": {
+    "input_tokens": 422,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 291,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 422,
+      "output_tokens": 291,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 422,
+     "outputTokens": 291,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.005631000000000001,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.005631000000000001,
+   "turns": 1,
+   "ms": 3691,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "hex-10",
+   "ok": true,
+   "transcript": "c6570c6781e80771724d3873978343f0b236de5e2be3bd9a4f9528460ac69806b957be\nc3081bb3171f6aff997a45f38830d9792a3489fe5f5b0e9a38595aeee61a08d8b31170\n3641724a46c1b71c4418ec566cba85ca357f486bb89cd1f021a18bbd1cf2bae4681f39\ne40c185d5e7f205f43c7bbc69a599a6e4280f2bf5017cf10238b5f9ca2ee68fe5896c2\n2ea10187d6f858ccadbfed92b13517528b9296a1b537a3d5782c6e61bd88b39e8b226c\n59f576eefa821453b5627c55c6152c159d6ebaf727a11078ee24661488bf81b26023f8\n78571645892899a3a167ad998fa72b32acb632a7",
+   "usage": {
+    "input_tokens": 422,
+    "output_tokens": 301
+   },
+   "rawUsage": {
+    "input_tokens": 422,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 301,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 422,
+      "output_tokens": 301,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 422,
+     "outputTokens": 301,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.005781,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.005781,
+   "turns": 1,
+   "ms": 4073,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "hex-11",
+   "ok": true,
+   "transcript": "4255188dddd7f867e74dcdfa7282434bce0ff606a9d55b43b2a16ec001082185baf914\n6c3987cbee57cdcae7ffdb08401c422644012f879653208557e277ee8852889a9304ca\n82bba7fe2b915a72bf3de0a09a3624ef641e84e4335be628cccf49e0a073e5541f31ec\n6bc9c1449507d7a78d66d037af55700120d4d197ec20b99b40472c85612dbb308cdb5e\nc24397bd44cf512a2e6597d7c8cddae6a9e2b4b74c2a98322454fe7c0529e8a0e29154\n511fe3c7fc16dea86acef4fb0100fc8c627c51fa413581096c956860ebd77588338a69\nabb62a417676c49527aa0eb92417415a05e614ff",
+   "usage": {
+    "input_tokens": 422,
+    "output_tokens": 295
+   },
+   "rawUsage": {
+    "input_tokens": 422,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 295,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 422,
+      "output_tokens": 295,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 422,
+     "outputTokens": 295,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.005691,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.005691,
+   "turns": 1,
+   "ms": 3958,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "base64-01",
+   "ok": true,
+   "transcript": "EjepcLzNJJYsvRO7IDPtV/S0sQx59yN3PdkHZD1SHMk43v0MdpFMkSM35UWMmUDaDQ6nnd\nrlr05gzfH4ir82YrirUzdZRsn90G6hfu8jjXK/rqJvX5kpTrYk9iSyDd7k5eu/kmWvsJFI\nfxHKa/8U3oj6T8wauJF1BhHvqS9QXmc6lxsSABMpeRTJhpU2O8aR4iG3OcTnJpYx0+r61M\niXkv/2eqaz6k6QW8ULfx9i75JJrMfLJYixX6VW/oPBDHaZwBx+tePGJJDuApEG1m3hhk9W\nSLPRARFODzSxRybPhShdLCfusCC5XrdPYQuD3BN95w5V68mnQsa1KTA7dCVoOVfz2al4G/\nVOEBOKbyoRb6ufMSwKltp2BgoSSGsT5lUCwnrfaQ==",
+   "usage": {
+    "input_tokens": 399,
+    "output_tokens": 376
+   },
+   "rawUsage": {
+    "input_tokens": 399,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 376,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 399,
+      "output_tokens": 376,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 399,
+     "outputTokens": 376,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.006837,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.006837,
+   "turns": 1,
+   "ms": 5998,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "base64-03",
+   "ok": true,
+   "transcript": "gdqkF3n/PfWKVhHH+u8aTDJUnDuBUv2/EFGT/Zs5kCbvpEGNcmtrgfNNNdyi7VembqR10Y\nXQSpriFMXFGLKncJM5E3AxkSW3LVNTbocf55tRxfzQ98ETmpvMC5shK4+tA1DVIWgXkri7\ngY4u5faz5y4E9/Xg11fnBVsyKoq3etJ6qWL2yyZKABklbkhKynEq974EIsV6tn6fNS7jfJ\nv1rbwEI7lmzsCTMcQDX3M5RSeDPH04RoWTip3V5lYtBXXSGptNv1QetmbbSC1PQvnyzfSv\nLcoo166lpnOtZTig/sONDH3WIPlQIrhcedNqLN3uCOekcA==",
+   "usage": {
+    "input_tokens": 376,
+    "output_tokens": 312
+   },
+   "rawUsage": {
+    "input_tokens": 376,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 312,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 376,
+      "output_tokens": 312,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 376,
+     "outputTokens": 312,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.005808,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.005808,
+   "turns": 1,
+   "ms": 4663,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "base64-05",
+   "ok": true,
+   "transcript": "BfJVRkkGgYwGivaPcWxL+ufaPCV8PR1YLnNiCQiO+9upHq7Me9LrDcfduYCAjVhNxv1CKE\nGkOjHO0DDkAKcnpWorOhO20tTMsjDs27OIW2yBPyb3GAtTXBdZhloPah5n1QcgjDTE0Nwq\np7yZwjZh/htL//lY9m5hkaPZEClPplVHuKmJVhtHJ7k5EZ3EeM6HJYpWwCQlgfdjU/IGeO\n2eMMPSIQNdqpGJ4+7HIzgAR0YQpZcLvyxroppXZjKtM1NyYZ0EZuaGGKpLmiv5hr6F7fY1\nTjJC1WdgDSloZ9aHWoUDq3BNkphiUujFJuBQ7eARsWvhJjfe+CsxRs6PCFQ9Tihza03wkJ\n+cu6Ej6z1dPbF01264rUj7hornP5QbmYV0sRI=",
+   "usage": {
+    "input_tokens": 399,
+    "output_tokens": 806
+   },
+   "rawUsage": {
+    "input_tokens": 399,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 806,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 399,
+      "output_tokens": 806,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 399,
+     "outputTokens": 806,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.013287,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.013287,
+   "turns": 1,
+   "ms": 12059,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "base64-06",
+   "ok": true,
+   "transcript": "yiBXLSEWfhxKl1Y4rxKjQEAV+QEIwR4otoLQmjbEdr3ftkWI57Z748BVDS1UIg1hoxiKPc\nrOP8VXLnuhcaK7zUtE3icr6IaVS6Pjq+cqIl5OO3fa/OdSAqmrQZyi9kiKG2oiJNPs6QnB\niK4m5qPoY60Ygo/y1DmPOwGstavBP/9t/+F+VRiMEKka3su0ioybN4hW2lG5WxdYnU71j0\niHrPZkfrBMk2fiApDHGO1rujMo9D/KLLAVZowB3uaHMJEPTLPw3j+KeVfO9ewDZzgedIJu\nvslN3IZ0wuPT/ukBTwfqgTZQXL6J+dm9CQVLuJCTXnytbhSA/gglMfj9xHQbJHo0ss+x/J\nGeXn+6LWgUEYgZPWMylRMlV/NEJWuPBeQE9LqzRmcOXpkJ0i2nQ4PxV4U84Q==",
+   "usage": {
+    "input_tokens": 399,
+    "output_tokens": 405
+   },
+   "rawUsage": {
+    "input_tokens": 399,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 405,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 399,
+      "output_tokens": 405,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 399,
+     "outputTokens": 405,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.007272,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.007272,
+   "turns": 1,
+   "ms": 10244,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "base64-07",
+   "ok": true,
+   "transcript": "AFXxvlgBnUffoM1MtXBN31VOq+B08LDW3ISDPYKfitJTNHGEu4gufiUwpajRafxUrhCZs0\nwMVqaR5+OClPbhzF8G2GflMbng6TwpWRbVs2JrAyQbEyhxqwV7h/lKFLzDXRbysN9Fjo0O\n07fqAdoOyBKtaFaTvrBNHfL/S5Zfr3FiDVF1ReAEYkhJEosBGMgKukIGsrS1dPb4aDxUqP\n9aB9K27ZbBz+6NkJfVjAlwsvBH9c1HV8RHgyidpsHBoa13vMOULPdHn8ro9CBCnNqoJix9\nvhUPMrYF3pQHI5ElqA==",
+   "usage": {
+    "input_tokens": 376,
+    "output_tokens": 289
+   },
+   "rawUsage": {
+    "input_tokens": 376,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 289,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 376,
+      "output_tokens": 289,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 376,
+     "outputTokens": 289,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.005462999999999999,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.005462999999999999,
+   "turns": 1,
+   "ms": 6110,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "base64-09",
+   "ok": true,
+   "transcript": "```\ndv7Hacl4uOiTdE6GA8A5QKtmepDdLZiI7HCVR0OMd2oeHdYIgSn8/wdXzrcaCzcjJ9F4Rn\nvxNyTLXtV0J7S+OOYV3VNBB4GvLuPQ8YcMQdqJXOTxHJCr0EOMNvIvrXARG2KIUt3ifL04\nWzEimSZsdKQVJfERklakj2wYyevmvsKb+amicfjXH77cPAnEGTkC1BJ9Qgf4zsImfDCfCa\nWh1CRTH+6vvmNjnS/yETKTsB1arZAQiI22P+sGDecD8GXHCzVYVpSQvsWNDvxaP+MylNr5\nid2gq45U68gVWA93XU9E3OTcWAEjTS+e+bgWerkDKBNud8rb718y9SDP0l8mpNToX5S3zu\nv/e/qJ\n```",
+   "usage": {
+    "input_tokens": 399,
+    "output_tokens": 737
+   },
+   "rawUsage": {
+    "input_tokens": 399,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 737,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 399,
+      "output_tokens": 737,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 399,
+     "outputTokens": 737,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.012252,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.012252,
+   "turns": 1,
+   "ms": 7528,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "base64-10",
+   "ok": true,
+   "transcript": "NGDnmA1gsUOeR1efyLNN+ofj8s3BypQSMWT3wBgedzcB3TOMXWdzy8VFrUpqwEYbG4/prp\nCnFbqmC60TK+ZNG0SFsuNKiNrDUnxYWBBDIWvfrbMAvEuPBFC9Zn15a9wBp+Qxw/UNGf3X\nTJgjE5y0aWNhxlxGT2CQOXAwrjcVWWMiLXUbdhqSyS5tTZdTSRyF/lp5klYmkOel2+Be+M\n/y15nXyktL2ZxrYuOBmwl39uaH/z6aLNNi80n9m7yA1erQJ9fXgsRUrAMc1RzSEqgTiBaS\nQFX2FgPpkZ2jyaRlP3onTyEuVtW18Z7IRn79",
+   "usage": {
+    "input_tokens": 376,
+    "output_tokens": 668
+   },
+   "rawUsage": {
+    "input_tokens": 376,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 668,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 376,
+      "output_tokens": 668,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 376,
+     "outputTokens": 668,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.011148,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.011148,
+   "turns": 1,
+   "ms": 8066,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  },
+  {
+   "id": "base64-12",
+   "ok": true,
+   "transcript": "N3jVDeBWEI4kSuifnbvTBULF5fYcGpdyE8OYO/2I30Du3L8oYDXQTXo8mSs/67grgH+68v\nXT1TQ0r9e5FapPyNMxMOD120Y7slR7Fwww4VopkdE48D/6a+fJHYUvK4oBny4gYQu/aUEt\nRGg65FOnqzygEZavV+uSE2cA/nFIFM5rt0zqNoqlUrtqvI6mxlH+kIUw5i8VuickChWaqX\nfDA8iUkSjvDNEDloCyQw5CF1Qjj1uuTNM5y0V9dGRM8gQMyUf/JOUgp8UwwZ0JoXFWqJsE\ngliKRq/bSHWSJzM1oJ4K8vNfE0CLKbBrLowOw3TAafaKmV+QLvXfZc9MuN0Z1z9yG7zrii\nEEMjaZ9mmKd3XT2AuLnuUGEAjSzEeRdrhbbNA=",
+   "usage": {
+    "input_tokens": 399,
+    "output_tokens": 801
+   },
+   "rawUsage": {
+    "input_tokens": 399,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 801,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 0,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 399,
+      "output_tokens": 801,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 0
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 399,
+     "outputTokens": 801,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 0,
+     "webSearchRequests": 0,
+     "costUSD": 0.013212,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.013212,
+   "turns": 1,
+   "ms": 8313,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  }
+ ]
+}
