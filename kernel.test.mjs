@@ -328,15 +328,22 @@ test('readbackJudge: the five sealed rules, each bar at its edge', () => {
   for (const bad of [null, [], 'x', [null], [{ shape: 'hex', contentExact: 'yes', contentCer: 0 }], [{ shape: 'hex', contentExact: true, contentCer: '0' }], [{ contentExact: true, contentCer: 0 }]]) assert.match(readbackJudge(bad).why, /graded rows/);
 });
 
-test('spend: from the provider\'s own token counts, at the locked list price', () => {
-  const P = { inPerM: 2, outPerM: 10, currency: 'USD' };
-  assert.deepEqual(spend([{ input_tokens: 1000, output_tokens: 500 }, { input_tokens: 0, output_tokens: 0 }], P, 0.75396), { ok: true, calls: 2, input: 1000, output: 500, usd: 0.007, gbp: 0.0053 });
-  assert.deepEqual(spend([], P, 0.75), { ok: true, calls: 0, input: 0, output: 0, usd: 0, gbp: 0 });
-  for (const u of [null, 'x', [null], [{ input_tokens: 1.5, output_tokens: 0 }], [{ input_tokens: -1, output_tokens: 0 }], [{ input_tokens: 1, output_tokens: -1 }], [{ input_tokens: 1 }]]) assert.match(spend(u, P, 0.75).why, /usage/);
+test("spend: from the provider's own token counts, at the locked list price", () => {
+  const P = { inPerM: 2, outPerM: 10, currency: 'USD' }, C = { write5m: 1.25, write1h: 2, read: 0.1 };
+  assert.deepEqual(spend([{ input_tokens: 1000, output_tokens: 500 }, { input_tokens: 0, output_tokens: 0 }], P, 0.75396), { ok: true, calls: 2, input: 1000, fresh: 1000, cacheWrite: 0, cacheRead: 0, output: 500, usd: 0.007, gbp: 0.0053 });
+  assert.deepEqual(spend([], P, 0.75), { ok: true, calls: 0, input: 0, fresh: 0, cacheWrite: 0, cacheRead: 0, output: 0, usd: 0, gbp: 0 });
+  // the plumbing call as the provider billed it: 2 fresh, 3,265 written to the 1-hour cache, 123 out
+  assert.deepEqual(spend([{ input_tokens: 2, cache_write_1h: 3265, output_tokens: 123 }], P, 0.75396, C), { ok: true, calls: 1, input: 3267, fresh: 2, cacheWrite: 3265, cacheRead: 0, output: 123, usd: 0.0143, gbp: 0.0108 });
+  assert.equal(spend([{ input_tokens: 0, cache_write_5m: 100000, output_tokens: 0 }], P, 1, C).usd, 0.25);
+  assert.equal(spend([{ input_tokens: 0, cache_read: 100000, output_tokens: 0 }], P, 1, C).usd, 0.02);
+  assert.equal(spend([{ input_tokens: 0, cache_write_1h: 100000, output_tokens: 0 }], P, 1, C).usd, 0.4);
+  assert.deepEqual(spend([{ input_tokens: 5, cache_read: 0, output_tokens: 0 }], P, 1), { ok: true, calls: 1, input: 5, fresh: 5, cacheWrite: 0, cacheRead: 0, output: 0, usd: 0, gbp: 0 });
+  for (const cc of [undefined, null, { ...C, read: 'x' }, { write5m: 1, write1h: 2 }]) assert.match(spend([{ input_tokens: 0, cache_read: 1, output_tokens: 0 }], P, 1, cc).why, /cache multiples/);
+  for (const u of [null, 'x', [null], [{ input_tokens: 1.5, output_tokens: 0 }], [{ input_tokens: -1, output_tokens: 0 }], [{ input_tokens: 1, output_tokens: -1 }], [{ input_tokens: 1 }], [{ input_tokens: 1, output_tokens: 0, cache_read: -1 }], [{ input_tokens: 1, output_tokens: 0, cache_write_1h: 0.5 }]]) assert.match(spend(u, P, 0.75).why, /usage/);
   for (const [p, fx] of [[null, 0.75], [{ ...P, inPerM: 'x' }, 0.75], [{ ...P, outPerM: null }, 0.75], [{ ...P, currency: 'GBP' }, 0.75], [P, 0], [P, 'x']]) assert.match(spend([], p, fx).why, /list price/);
 });
 
 test('fuzz: the read-back kernel never throws', () => {
   const junk = [undefined, null, 0, NaN, '', 'x', '```', [], {}, [null], M, () => 1];
-  for (const a of junk) for (const b of junk) assert.doesNotThrow(() => { expectedLayout(a, b); normalizeRead(a); levenshtein(a, b); gradeRead(a, b); readbackJudge(a); readbackJudge([a]); spend(a, b, 0.75); spend([a], b, a); });
+  for (const a of junk) for (const b of junk) assert.doesNotThrow(() => { expectedLayout(a, b); normalizeRead(a); levenshtein(a, b); gradeRead(a, b); readbackJudge(a); readbackJudge([a]); spend(a, b, 0.75); spend([a], b, a); spend([a], b, 0.75, a); });
 });

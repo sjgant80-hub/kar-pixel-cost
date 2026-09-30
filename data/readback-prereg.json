@@ -36,14 +36,15 @@
    "--max-budget-usd",
    "0.05"
   ],
-  "cwd": "a fresh empty temporary directory for every call",
+  "cwd": "a fresh empty directory under C:\\tmp for every call — outside the user profile, so walking up from it finds no CLAUDE.md (amendment 1)",
+  "whatTheCliAdds": "read from the CLI's own outgoing request, captured by a local sink that answers 400 so nothing was sent or billed: its two fixed system lines (a billing header, and \"You are a Claude agent, built on Anthropic's Claude Agent SDK.\"), a one-line reminder of the per-call budget, and a context line with the date and the account email; max_tokens 64000; adaptive thinking at high effort, billed as output. No tools. None of it carries any source text.",
   "system": "You transcribe text from images.",
   "content": [
    "image: the committed PNG, base64, media type image/png",
    "text: the instruction"
   ],
   "instruction": "Transcribe all of the text in this image exactly as it appears, character for character, keeping the line breaks. Output only the transcription — no commentary, no code fences.",
-  "sampling": "the CLI default — temperature is not settable on this path, so each picture is read once and that read is the one graded",
+  "sampling": "the CLI default (adaptive thinking, high effort) — temperature is not settable on this path, so each picture is read once and that read is the one graded",
   "oneCallPerPicture": true
  },
  "blind": "The model is given the system line, the picture and the instruction — nothing else. No tools (--tools \"\"), no MCP servers, no settings but the empty project scope, and an empty working directory, so it cannot open the corpus. The source text never appears in any argument or message. Each call's own init event (its tool list, MCP servers and credential source) is recorded as the receipt of that.",
@@ -266,14 +267,38 @@
   "how": "mayCall before each call, charged after with the provider's own token counts (all input kinds + output)",
   "heldout": {
    "calls": 64,
-   "tokens": 60000
+   "tokens": 150000
   },
   "plumbing": {
    "calls": 1,
    "tokens": 2000
   }
  },
- "spend": "the provider's own token counts from each call's result, all input kinds summed as input, at the locked list price for claude-sonnet-5 in prices.lock.json and the locked pound rate. The CLI's own cost figure is recorded beside it as a cross-check. Which credential paid is recorded from the CLI's init event and stated plainly: on a subscription the list-price figure is what an API key would have paid, not new money.",
+ "spend": "the provider's own token counts from each call's result, priced by kind (amendment 1): fresh input at the locked list input price for claude-sonnet-5 in prices.lock.json, cache writes and reads at the multiples below, output at the locked output price, then the locked pound rate — kernel spend(). The CLI's own cost figure is recorded but not used: CLI 2.1.201 prices Sonnet 5 at $3/$15 per million, while the pricing page says $2/$10 is the standard price and the scheduled rise will not occur. Which credential paid is recorded from the CLI's init event and stated plainly: on a subscription the list-price figure is what an API key would have paid, not new money. The plumbing calls are included.",
+ "cacheMultiples": {
+  "write5m": 1.25,
+  "write1h": 2,
+  "read": 0.1,
+  "of": "the base input price",
+  "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+  "checked": "2026-09-30"
+ },
+ "amendments": [
+  {
+   "n": 1,
+   "date": "2026-09-30",
+   "madeBefore": "any held-out picture was sent",
+   "trigger": "the first plumbing check failed its own token rule: 3,267 input tokens (2 fresh + 3,265 written to the 1-hour cache) against a ceiling of 423. Its read of prose-03 was exact; that is recorded and judges nothing. Kept as data/readback-plumbing-1.json.",
+   "cause": "a local sink captured the CLI's outgoing request (no call made): about 7,400 characters of C:\\Users\\sjgan\\.claude\\CLAUDE.md were loaded as project instructions, because the per-call directory sat under the user profile and the CLI walks up from its working directory. Blindness was not breached — no source text — but it was not a clean call.",
+   "changes": [
+    "the per-call directory moves under C:\\tmp (the sink confirmed the CLAUDE.md block is gone); the runner now refuses a directory with an instruction file above it",
+    "spend is priced by kind, because the provider bills 1-hour cache writes at 2x the input price and the first plumbing call was almost all cache write",
+    "the held-out token cap rises from 60,000 to 150,000, because the CLI runs adaptive thinking at high effort and thinking is billed as output — a cap that stopped the run part-way would lose pictures, and 150,000 is still a hard ceiling",
+    "what the CLI adds to every call is written down (call.whatTheCliAdds)"
+   ],
+   "unchanged": "the model, the pictures, the system line, the instruction, the grading, the five rules and their bars, the predictions"
+  }
+ ],
  "predictions": {
   "said": "before the run, by Kar",
   "median-cer": "pass — most pictures read clean",

@@ -1,0 +1,104 @@
+{
+ "kind": "kar-pixel-cost-readback-plumbing",
+ "v": 1,
+ "sealedIn": "cfdb150f68cb173de3241f3aebda1d7369ee4ed9",
+ "preregSha256": "bf54e068a88543798f2e7a552b64656d344d408670d0ad08e65036bc2cb9e8bd",
+ "ranAt": "2026-09-30T10:15:34.582Z",
+ "purse": {
+  "line": "the call ceiling is spent — si-didy will refuse the frontier until it is restarted",
+  "calls": {
+   "limit": 1,
+   "left": 0,
+   "made": 1
+  },
+  "tokens": {
+   "limit": 2000,
+   "left": 2000
+  },
+  "refused": 1,
+  "lastRefusal": "spend budget exceeded (0/2000)"
+ },
+ "rows": [
+  {
+   "id": "prose-03",
+   "ok": true,
+   "transcript": "Serve render-harness.html and call window.render(text, {fontPx,\nmaxWidthPx}) in the browser to get {width, height, dataUrl} &mdash;\nwrap the dataUrl's base64 payload in an image content block and pass\nit to count-tokens.mjs for the real image-token count. Full\nstep-by-step is in findings.json's own reproduce field.",
+   "usage": {
+    "input_tokens": 3267,
+    "output_tokens": 123
+   },
+   "rawUsage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 3265,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 123,
+    "server_tool_use": {
+     "web_search_requests": 0,
+     "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+     "ephemeral_1h_input_tokens": 3265,
+     "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+     {
+      "input_tokens": 2,
+      "output_tokens": 123,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 3265,
+      "cache_creation": {
+       "ephemeral_5m_input_tokens": 0,
+       "ephemeral_1h_input_tokens": 3265
+      },
+      "type": "message"
+     }
+    ],
+    "speed": "standard"
+   },
+   "modelUsage": {
+    "claude-sonnet-5": {
+     "inputTokens": 2,
+     "outputTokens": 123,
+     "cacheReadInputTokens": 0,
+     "cacheCreationInputTokens": 3265,
+     "webSearchRequests": 0,
+     "costUSD": 0.021440999999999998,
+     "contextWindow": 1000000,
+     "maxOutputTokens": 64000
+    }
+   },
+   "cliCostUsd": 0.021440999999999998,
+   "turns": 1,
+   "ms": 3112,
+   "init": {
+    "model": "claude-sonnet-5",
+    "tools": [],
+    "mcp_servers": [],
+    "apiKeySource": "none",
+    "version": "2.1.201"
+   },
+   "receipt": true
+  }
+ ],
+ "checks": [
+  {
+   "what": "the call succeeds",
+   "pass": true
+  },
+  {
+   "what": "no tools and no MCP servers",
+   "pass": true
+  },
+  {
+   "what": "only claude-sonnet-5 was used",
+   "pass": true
+  },
+  {
+   "what": "input ≤ counted image tokens + 300 (3267 ≤ 423)",
+   "pass": false
+  }
+ ],
+ "pass": false
+}

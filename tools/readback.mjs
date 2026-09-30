@@ -13,7 +13,7 @@
 // Both refuse unless the pre-registration is committed and on GitHub, and both run once.
 import { readFileSync, writeFileSync, existsSync, mkdtempSync, rmSync } from 'node:fs';
 import { join, resolve } from 'node:path';
-import { tmpdir, homedir } from 'node:os';
+import { homedir } from 'node:os';
 import { execFileSync, spawn } from 'node:child_process';
 import { pathToFileURL } from 'node:url';
 import { createHash } from 'node:crypto';
@@ -66,9 +66,20 @@ const CLI = (() => {
 if (!CLI) die('the claude CLI binary was not found');
 const args = pre.call.args.map((a) => (a === '<system>' ? pre.call.system : a));
 
+// Where each call runs (amendment 1): an empty directory OUTSIDE the user profile. The CLI walks up from its working
+// directory loading every CLAUDE.md it meets — under the profile that picked up the estate's own standing orders — so
+// the root is checked: no instruction file may sit in it or any directory above it.
+const CALL_ROOT = process.platform === 'win32' ? 'C:\\tmp' : '/tmp';
+if (resolve(CALL_ROOT).toLowerCase().startsWith(resolve(homedir()).toLowerCase())) die('the call directory must sit outside the user profile');
+for (let d = resolve(CALL_ROOT); ; d = resolve(d, '..')) {
+  for (const f of ['CLAUDE.md', 'CLAUDE.local.md', join('.claude', 'CLAUDE.md'), 'AGENTS.md']) if (existsSync(join(d, f))) die('an instruction file sits above the call directory: ' + join(d, f));
+  if (resolve(d, '..') === d) break;
+}
+if (!existsSync(CALL_ROOT)) die(CALL_ROOT + ' does not exist');
+
 function readOne(id) {
   return new Promise((done) => {
-    const cwd = mkdtempSync(join(tmpdir(), 'kar-readback-'));
+    const cwd = mkdtempSync(join(CALL_ROOT, 'kar-readback-'));
     const child = spawn(CLI, args, { cwd, shell: false, stdio: ['pipe', 'pipe', 'pipe'] });
     let buf = '', err = '', init = null, result = null;
     const timer = setTimeout(() => child.kill(), 240000);

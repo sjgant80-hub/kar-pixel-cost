@@ -253,11 +253,19 @@ export function readbackJudge(rows) {
   return { ok: true, rules, passed: rules.filter((r) => r.pass).length, of: rules.length, banked: { cheaper: cheap.length, readExactly: exact(cheap) } };
 }
 
-// spend(usages, price, gbpPerUsd) — what the calls cost at the model's list price, from the provider's own counts.
-export function spend(usages, price, gbpPerUsd) {
-  if (!Array.isArray(usages) || usages.some((u) => !isObj2(u) || !Number.isInteger(u.input_tokens) || !Number.isInteger(u.output_tokens) || u.input_tokens < 0 || u.output_tokens < 0)) return { ok: false, why: 'usage: integer input_tokens and output_tokens per call' };
+// spend(usages, price, gbpPerUsd, cache) — what the calls cost at the model's list price, from the provider's own
+// counts. Each usage: fresh input_tokens and output_tokens, and optionally the cached kinds (cache_write_5m,
+// cache_write_1h, cache_read), which the provider prices as multiples of the input rate — cache carries those
+// multiples ({ write5m, write1h, read }) and is only needed when a cached kind is non-zero.
+const USAGE_KINDS = ['input_tokens', 'cache_write_5m', 'cache_write_1h', 'cache_read', 'output_tokens'];
+export function spend(usages, price, gbpPerUsd, cache) {
+  if (!Array.isArray(usages) || usages.some((u) => !isObj2(u) || !Number.isInteger(u.input_tokens) || !Number.isInteger(u.output_tokens) || USAGE_KINDS.some((k) => u[k] !== undefined && !(Number.isInteger(u[k]) && u[k] >= 0)))) return { ok: false, why: 'usage: integer input_tokens and output_tokens per call, and whole cached counts' };
   if (!isObj2(price) || !isNum2(price.inPerM) || !isNum2(price.outPerM) || price.currency !== 'USD' || !isNum2(gbpPerUsd) || !(gbpPerUsd > 0)) return { ok: false, why: 'a USD list price per million tokens and the pound rate' };
-  const input = usages.reduce((a, u) => a + u.input_tokens, 0), output = usages.reduce((a, u) => a + u.output_tokens, 0);
-  const usd = (input * price.inPerM + output * price.outPerM) / 1e6;
-  return { ok: true, calls: usages.length, input, output, usd: Math.round(usd * 1e4) / 1e4, gbp: Math.round(usd * gbpPerUsd * 1e4) / 1e4 };
+  const t = Object.fromEntries(USAGE_KINDS.map((k) => [k, usages.reduce((s, u) => s + (u[k] || 0), 0)]));
+  const cached = t.cache_write_5m + t.cache_write_1h + t.cache_read;
+  const c = isObj2(cache) && [cache.write5m, cache.write1h, cache.read].every(isNum2) ? cache : null;
+  if (cached > 0 && !c) return { ok: false, why: 'cached tokens need the cache multiples' };
+  const inputUnits = t.input_tokens + (c ? t.cache_write_5m * c.write5m + t.cache_write_1h * c.write1h + t.cache_read * c.read : 0);
+  const usd = (inputUnits * price.inPerM + t.output_tokens * price.outPerM) / 1e6;
+  return { ok: true, calls: usages.length, input: t.input_tokens + cached, fresh: t.input_tokens, cacheWrite: t.cache_write_5m + t.cache_write_1h, cacheRead: t.cache_read, output: t.output_tokens, usd: Math.round(usd * 1e4) / 1e4, gbp: Math.round(usd * gbpPerUsd * 1e4) / 1e4 };
 }
