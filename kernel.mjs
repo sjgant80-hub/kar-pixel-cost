@@ -181,3 +181,83 @@ export function judge(scored) {
   ];
   return { ok: true, rules, passed: rules.filter((r) => r.pass).length, of: rules.length, tally };
 }
+
+// ════════════════════════════════════════════════════════════════════════════════════════════════
+// v2b · THE READ-BACK (2026-09-30) — a saving is worth nothing if the read is wrong.
+//
+// Every held-out picture is shown, alone, to the model whose tokens were counted, with one fixed instruction; it
+// never sees the source. Each transcript is graded here, deterministically, against the committed source — no model
+// judges a model. The grading and the pass bars were sealed (data/readback-prereg.json) before the first paid call.
+// ════════════════════════════════════════════════════════════════════════════════════════════════
+
+// expectedLayout(text, m) — what the picture shows: the text broken into the renderer's lines.
+export function expectedLayout(text, m) {
+  const s = imageSize(text, m);
+  if (!s.ok) return null;
+  return wrapLines(text, s.charsPerLine).lines.join('\n');
+}
+
+// normalizeRead(t) — the only clean-up a transcript gets: CRLF to LF; a reply wholly inside one code fence is
+// unwrapped; trailing spaces are cut from each line; blank lines at the very start and end are dropped.
+export function normalizeRead(t) {
+  if (!isStr2(t)) return null;
+  let s = t.replace(/\r\n?/g, '\n');
+  const fence = /^\s*```[^\n]*\n([\s\S]*?)\n```\s*$/.exec(s);
+  if (fence) s = fence[1];
+  s = s.split('\n').map((line) => line.replace(/[ \t]+$/, '')).join('\n');
+  return s.replace(/^\n+/, '').replace(/\n+$/, '');
+}
+
+// levenshtein(a, b) — edits (insert, delete, substitute) to turn a into b.
+export function levenshtein(a, b) {
+  if (!isStr2(a) || !isStr2(b)) return null;
+  let prev = Array.from({ length: b.length + 1 }, (_, j) => j);
+  for (let i = 1; i <= a.length; i++) {
+    const cur = [i];
+    for (let j = 1; j <= b.length; j++) cur[j] = Math.min(prev[j] + 1, cur[j - 1] + 1, prev[j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+    prev = cur;
+  }
+  return prev[b.length];
+}
+
+const squash = (s) => s.replace(/\s+/g, '');
+
+// gradeRead(expected, transcript) — content is every non-whitespace character, in order: contentExact when they all
+// match, contentCer = edits ÷ expected content length. layoutExact also asks for the line breaks and spaces.
+export function gradeRead(expected, transcript) {
+  if (!isStr2(expected) || squash(expected).length === 0) return { ok: false, why: 'the expected text' };
+  const got = normalizeRead(transcript);
+  if (got === null) return { ok: false, why: 'the transcript must be a string' };
+  const want = normalizeRead(expected), a = squash(want), b = squash(got);
+  const d = levenshtein(a, b);
+  return { ok: true, layoutExact: got === want, contentExact: a === b, edits: d, contentCer: Math.round((d / a.length) * 10000) / 10000 };
+}
+
+// readbackJudge(rows) — the five read-back rules sealed in data/readback-prereg.json, each with the number that
+// decided it. rows: [{ id, shape, contentExact, contentCer, cheaperAsImage }].
+export function readbackJudge(rows) {
+  if (!Array.isArray(rows) || rows.length === 0 || rows.some((r) => !isObj2(r) || !isStr2(r.shape) || typeof r.contentExact !== 'boolean' || !isNum2(r.contentCer))) return { ok: false, why: 'graded rows: shape, contentExact, contentCer' };
+  const exact = (rs) => rs.filter((r) => r.contentExact).length;
+  const of = (shape) => rows.filter((r) => r.shape === shape);
+  const cers = rows.map((r) => r.contentCer);
+  const cheap = rows.filter((r) => r.cheaperAsImage === true);
+  const med = median(cers);
+  // a shape with no rows gives 0 over 0, which is NaN, and NaN never clears a bar: a missing shape never passes
+  const rules = [
+    { id: 'median-cer', pass: med <= 0.01, value: 'median ' + Math.round(med * 10000) / 100 + '%' },
+    { id: 'exact-overall', pass: exact(rows) / rows.length >= 0.7, value: exact(rows) + '/' + rows.length },
+    { id: 'exact-hex', pass: exact(of('hex')) / of('hex').length >= 0.75, value: exact(of('hex')) + '/' + of('hex').length },
+    { id: 'exact-base64', pass: exact(of('base64')) / of('base64').length >= 0.75, value: exact(of('base64')) + '/' + of('base64').length },
+    { id: 'no-wreck', pass: Math.max(...cers) <= 0.1, value: 'worst ' + Math.round(Math.max(...cers) * 10000) / 100 + '%' },
+  ];
+  return { ok: true, rules, passed: rules.filter((r) => r.pass).length, of: rules.length, banked: { cheaper: cheap.length, readExactly: exact(cheap) } };
+}
+
+// spend(usages, price, gbpPerUsd) — what the calls cost at the model's list price, from the provider's own counts.
+export function spend(usages, price, gbpPerUsd) {
+  if (!Array.isArray(usages) || usages.some((u) => !isObj2(u) || !Number.isInteger(u.input_tokens) || !Number.isInteger(u.output_tokens) || u.input_tokens < 0 || u.output_tokens < 0)) return { ok: false, why: 'usage: integer input_tokens and output_tokens per call' };
+  if (!isObj2(price) || !isNum2(price.inPerM) || !isNum2(price.outPerM) || price.currency !== 'USD' || !isNum2(gbpPerUsd) || !(gbpPerUsd > 0)) return { ok: false, why: 'a USD list price per million tokens and the pound rate' };
+  const input = usages.reduce((a, u) => a + u.input_tokens, 0), output = usages.reduce((a, u) => a + u.output_tokens, 0);
+  const usd = (input * price.inPerM + output * price.outPerM) / 1e6;
+  return { ok: true, calls: usages.length, input, output, usd: Math.round(usd * 1e4) / 1e4, gbp: Math.round(usd * gbpPerUsd * 1e4) / 1e4 };
+}

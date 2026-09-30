@@ -18,6 +18,8 @@ jobs:
         run: |
           node tools/make-page.mjs
           git diff --exit-code index.html README.md llms.txt
+      - name: the read-back seal — the pre-registration is exactly what the committed inputs give
+        run: node tools/seal-readback.mjs --check
       - name: the basis — no untraced price, and this repository's own current compliance map
         run: |
           git clone --quiet https://github.com/sjgant80-hub/fallstack /tmp/fallstack && git -C /tmp/fallstack checkout --quiet 4eeb828

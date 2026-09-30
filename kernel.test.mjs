@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { tokensForImage, layoutPixels, wrapLines, imageSize, fitLaw, predictImage, cheaper, breakEven, score, shapeTally, judge } from './kernel.mjs';
+import { tokensForImage, layoutPixels, wrapLines, imageSize, fitLaw, predictImage, cheaper, breakEven, score, shapeTally, judge, expectedLayout, normalizeRead, levenshtein, gradeRead, readbackJudge, spend } from './kernel.mjs';
 
 // ── tokensForImage: Anthropic's published (w*h)/750 estimate ──
 test('rejects non-integer or non-positive width/height', () => {
@@ -253,4 +253,90 @@ test('the committed held-out result, judged against the pre-registration', () =>
   assert.deepEqual(j.rules.map((r) => [r.id, r.pass]), [['cost-law', true], ['decision', true], ['thumb-fails', true], ['shape-image', true], ['shape-text', false]]);
   assert.deepEqual(j.rules.map((r) => r.id), P.rules.map((r) => r.id), 'the judged rules are exactly the pre-registered ones');
   assert.deepEqual([j.tally.hex.meanPct, j.tally.base64.meanPct, j.tally.keyvalue.meanPct, j.tally.code.image], [-43.7, -60.4, 64.1, 2]);
+});
+
+// ════════════════════════════════════════════════════════════════════════════════════════════════
+// v2b · the read-back grader
+// ════════════════════════════════════════════════════════════════════════════════════════════════
+test('expectedLayout: the text as the picture shows it, line by line', () => {
+  assert.equal(expectedLayout('a b\nc', M), 'a b\nc');
+  assert.equal(expectedLayout('x'.repeat(75), M), 'x'.repeat(70) + '\n' + 'x'.repeat(5));
+  assert.equal(expectedLayout('a', null), null);
+  assert.equal(expectedLayout(5, M), null);
+});
+
+test('normalizeRead: the only clean-up a transcript gets', () => {
+  assert.equal(normalizeRead('abc'), 'abc');
+  assert.equal(normalizeRead('a\r\nb\rc'), 'a\nb\nc');
+  assert.equal(normalizeRead('```text\nabc  \r\ndef\n```\n'), 'abc\ndef');
+  assert.equal(normalizeRead('```\nx\n```'), 'x');
+  assert.equal(normalizeRead('  ```\nx\n```  '), 'x');
+  assert.equal(normalizeRead('see:\n```\nx\n```'), 'see:\n```\nx\n```');   // only a reply wholly inside one fence is unwrapped
+  assert.equal(normalizeRead('a \t\nb'), 'a\nb');
+  assert.equal(normalizeRead('  a'), '  a');                               // leading spaces are content
+  assert.equal(normalizeRead('\n\na\n\nb\n\n'), 'a\n\nb');
+  assert.equal(normalizeRead(''), '');
+  assert.equal(normalizeRead(null), null);
+  assert.equal(normalizeRead(7), null);
+});
+
+test('levenshtein', () => {
+  assert.equal(levenshtein('kitten', 'sitting'), 3);
+  assert.equal(levenshtein('', 'abc'), 3);
+  assert.equal(levenshtein('abc', ''), 3);
+  assert.equal(levenshtein('abc', 'abc'), 0);
+  assert.equal(levenshtein('ab', 'ba'), 2);
+  assert.equal(levenshtein('abcd', 'abd'), 1);
+  assert.equal(levenshtein('abd', 'abcd'), 1);
+  assert.equal(levenshtein('a', 5), null);
+  assert.equal(levenshtein(null, 'a'), null);
+});
+
+test('gradeRead: content (every non-whitespace character) and layout', () => {
+  assert.deepEqual(gradeRead('ab cd\nef', 'ab cd\nef'), { ok: true, layoutExact: true, contentExact: true, edits: 0, contentCer: 0 });
+  assert.deepEqual(gradeRead('ab cd\nef', 'ab cd ef'), { ok: true, layoutExact: false, contentExact: true, edits: 0, contentCer: 0 });
+  assert.deepEqual(gradeRead('abcd', 'abxd'), { ok: true, layoutExact: false, contentExact: false, edits: 1, contentCer: 0.25 });
+  assert.deepEqual(gradeRead('abc', '```\nabc\n```'), { ok: true, layoutExact: true, contentExact: true, edits: 0, contentCer: 0 });
+  assert.equal(gradeRead('abcdef', '').contentCer, 1);
+  assert.equal(gradeRead('abc', 'abcabc').contentCer, 1);
+  assert.equal(gradeRead('a'.repeat(3) + 'b', 'aaa').contentCer, 0.25);
+  assert.equal(gradeRead('abcdefg', 'abcdefx').contentCer, 0.1429);
+  for (const [e, t, re] of [['', 'x', /expected/], ['  \n ', 'x', /expected/], [5, 'x', /expected/], ['x', null, /transcript/], ['x', 3, /transcript/]]) assert.match(gradeRead(e, t).why, re);
+});
+
+test('readbackJudge: the five sealed rules, each bar at its edge', () => {
+  const r = (shape, exact, cer, cheap = false) => ({ id: shape, shape, contentExact: exact, contentCer: cer, cheaperAsImage: cheap });
+  const base = [...Array.from({ length: 4 }, () => r('hex', true, 0, true)), ...Array.from({ length: 4 }, () => r('base64', true, 0, true)), r('prose', true, 0), r('prose', false, 0.01)];
+  const j = readbackJudge(base);
+  assert.deepEqual(j.rules.map((x) => [x.id, x.pass, x.value]), [['median-cer', true, 'median 0%'], ['exact-overall', true, '9/10'], ['exact-hex', true, '4/4'], ['exact-base64', true, '4/4'], ['no-wreck', true, 'worst 1%']]);
+  assert.deepEqual([j.passed, j.of, j.banked], [5, 5, { cheaper: 8, readExactly: 8 }]);
+  const cers = (xs) => xs.map((c, i) => r(i < 2 ? 'hex' : 'base64', true, c));
+  assert.equal(readbackJudge(cers([0.01, 0.01, 0.2, 0.2])).rules[0].pass, false);     // median 0.105
+  assert.equal(readbackJudge(cers([0, 0.01, 0.01, 0.02])).rules[0].pass, true);       // median exactly 1%
+  assert.equal(readbackJudge(cers([0, 0.0101, 0.0101, 0.02])).rules[0].pass, false);
+  assert.equal(readbackJudge(cers([0, 0, 0, 0.1])).rules[4].pass, true);
+  assert.equal(readbackJudge(cers([0, 0, 0, 0.1001])).rules[4].pass, false);
+  const mix = (n, ok) => Array.from({ length: n }, (_, i) => r('prose', i < ok, 0));
+  assert.equal(readbackJudge([...mix(10, 7)]).rules[1].pass, true);
+  assert.equal(readbackJudge([...mix(10, 6)]).rules[1].pass, false);
+  const hex = (ok) => Array.from({ length: 4 }, (_, i) => r('hex', i < ok, 0));
+  assert.deepEqual([readbackJudge(hex(3)).rules[2].pass, readbackJudge(hex(2)).rules[2].pass], [true, false]);
+  const b64 = (ok) => Array.from({ length: 4 }, (_, i) => r('base64', i < ok, 0));
+  assert.deepEqual([readbackJudge(b64(3)).rules[3].pass, readbackJudge(b64(2)).rules[3].pass], [true, false]);
+  assert.deepEqual([readbackJudge(mix(3, 3)).rules[2].pass, readbackJudge(mix(3, 3)).rules[3].pass], [false, false]);   // a missing shape never passes
+  assert.deepEqual(readbackJudge([r('hex', false, 0.5, true), r('hex', true, 0, true), r('hex', true, 0, false)]).banked, { cheaper: 2, readExactly: 1 });
+  for (const bad of [null, [], 'x', [null], [{ shape: 'hex', contentExact: 'yes', contentCer: 0 }], [{ shape: 'hex', contentExact: true, contentCer: '0' }], [{ contentExact: true, contentCer: 0 }]]) assert.match(readbackJudge(bad).why, /graded rows/);
+});
+
+test('spend: from the provider\'s own token counts, at the locked list price', () => {
+  const P = { inPerM: 2, outPerM: 10, currency: 'USD' };
+  assert.deepEqual(spend([{ input_tokens: 1000, output_tokens: 500 }, { input_tokens: 0, output_tokens: 0 }], P, 0.75396), { ok: true, calls: 2, input: 1000, output: 500, usd: 0.007, gbp: 0.0053 });
+  assert.deepEqual(spend([], P, 0.75), { ok: true, calls: 0, input: 0, output: 0, usd: 0, gbp: 0 });
+  for (const u of [null, 'x', [null], [{ input_tokens: 1.5, output_tokens: 0 }], [{ input_tokens: -1, output_tokens: 0 }], [{ input_tokens: 1, output_tokens: -1 }], [{ input_tokens: 1 }]]) assert.match(spend(u, P, 0.75).why, /usage/);
+  for (const [p, fx] of [[null, 0.75], [{ ...P, inPerM: 'x' }, 0.75], [{ ...P, outPerM: null }, 0.75], [{ ...P, currency: 'GBP' }, 0.75], [P, 0], [P, 'x']]) assert.match(spend([], p, fx).why, /list price/);
+});
+
+test('fuzz: the read-back kernel never throws', () => {
+  const junk = [undefined, null, 0, NaN, '', 'x', '```', [], {}, [null], M, () => 1];
+  for (const a of junk) for (const b of junk) assert.doesNotThrow(() => { expectedLayout(a, b); normalizeRead(a); levenshtein(a, b); gradeRead(a, b); readbackJudge(a); readbackJudge([a]); spend(a, b, 0.75); spend([a], b, a); });
 });

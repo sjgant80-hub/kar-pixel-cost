@@ -1,0 +1,25 @@
+{
+ "registry": "sjgant80-hub/fallstack",
+ "entries": [
+  {
+   "id": "claude-sonnet-5",
+   "kind": "api",
+   "provider": "Anthropic",
+   "model": "Claude Sonnet 5",
+   "inPerM": 2,
+   "outPerM": 10,
+   "currency": "USD",
+   "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+   "checked": "2026-09-29"
+  },
+  {
+   "id": "fx-gbp-usd",
+   "kind": "fx",
+   "gbpPerUsd": 0.75396,
+   "how": "ECB euro reference rates for 2026-09-28: USD 1.1378 and GBP 0.85785 per euro, so GBP per USD = 0.85785 / 1.1378",
+   "source": "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",
+   "checked": "2026-09-29"
+  }
+ ],
+ "pulled": "2026-09-30"
+}
