@@ -1,0 +1,12 @@
+{
+  "name": "kar-pixel-cost",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "kernel.mjs",
+  "description": "kar-pixel-cost",
+  "author": "sjgant80-hub <sjgant80@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test"
+  }
+}
