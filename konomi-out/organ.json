@@ -1,0 +1,30 @@
+{
+  "id": "kar-pixel-cost",
+  "ring": "R3-heart",
+  "mesh": "niceassos-mesh",
+  "konomified": null,
+  "proof": {
+    "benchmark": "assessor-v0.10",
+    "core": "10/10",
+    "hash": "10721ea47ee9c359291cc888bd51a3af"
+  },
+  "behaviour": {
+    "gate": "witness",
+    "clean": true,
+    "score": 1,
+    "source": "kernel.mjs",
+    "skipped": false
+  },
+  "basis": {
+    "compliance": {
+      "aiAct": "not engaged",
+      "gdpr": false,
+      "duties": 0,
+      "asOf": "2026-09-30"
+    },
+    "prices": {
+      "locked": 0,
+      "priced": 0
+    }
+  }
+}
