@@ -141,7 +141,7 @@ export function score(samples, law, cStar) {
     const byLaw = cheaper(s.textTokens, pred);
     const cpt = s.chars / s.textTokens;
     const byThumb = cpt < cStar ? 'image' : 'text';
-    rows.push({ id: s.id, shape: s.shape, predicted: pred, real: s.real, errPct: Math.round(((pred - s.real) / s.real) * 10000) / 100, truth, lawRight: truth === 'tie' || byLaw === truth, thumbRight: truth === 'tie' || byThumb === truth, charsPerToken: Math.round(cpt * 1000) / 1000 });
+    rows.push({ id: s.id, shape: s.shape, predicted: pred, real: s.real, errPct: Math.round(((pred - s.real) / s.real) * 10000) / 100, truth, imageVsTextPct: Math.round(((s.real - s.textTokens) / s.textTokens) * 10000) / 100, lawRight: truth === 'tie' || byLaw === truth, thumbRight: truth === 'tie' || byThumb === truth, charsPerToken: Math.round(cpt * 1000) / 1000 });
   }
   const abs = rows.map((r) => Math.abs(r.errPct));
   return {
@@ -150,4 +150,34 @@ export function score(samples, law, cStar) {
     lawAccuracy: Math.round((rows.filter((r) => r.lawRight).length / rows.length) * 1000) / 1000,
     thumbAccuracy: Math.round((rows.filter((r) => r.thumbRight).length / rows.length) * 1000) / 1000,
   };
+}
+
+// shapeTally(rows) — per content shape: how many samples were cheaper as an image, as text, or tied, and the mean
+// real image-vs-text difference in per cent (negative = the image is cheaper).
+export function shapeTally(rows) {
+  if (!Array.isArray(rows)) return {};
+  const t = {};
+  for (const r of rows) {
+    if (!isObj2(r) || !isStr2(r.shape) || !['image', 'text', 'tie'].includes(r.truth) || !isNum2(r.imageVsTextPct)) continue;
+    const x = t[r.shape] || (t[r.shape] = { n: 0, image: 0, text: 0, tie: 0, sumPct: 0 });
+    x.n++; x[r.truth]++; x.sumPct += r.imageVsTextPct;
+  }
+  return Object.fromEntries(Object.entries(t).map(([k, x]) => [k, { n: x.n, image: x.image, text: x.text, tie: x.tie, meanPct: Math.round((x.sumPct / x.n) * 10) / 10 }]));
+}
+
+// judge(scored) — the five rules pre-registered in data/prereg.json (sealed in commit fbeb925 before the held-out
+// count), each with the number that decided it. The bars below are that file's, copied, not tuned.
+export function judge(scored) {
+  if (!isObj2(scored) || scored.ok !== true || !Array.isArray(scored.rows)) return { ok: false, why: 'a held-out score' };
+  const tally = shapeTally(scored.rows);
+  const all = (shapes, side) => shapes.every((k) => tally[k] && tally[k][side] === tally[k].n);
+  const count = (shapes, side) => shapes.reduce((a, k) => a + (tally[k] ? tally[k][side] : 0), 0) + '/' + shapes.reduce((a, k) => a + (tally[k] ? tally[k].n : 0), 0);
+  const rules = [
+    { id: 'cost-law', pass: scored.medianAbsErrPct <= 3 && scored.maxAbsErrPct <= 10, value: 'median ' + scored.medianAbsErrPct + '%, worst ' + scored.maxAbsErrPct + '%' },
+    { id: 'decision', pass: scored.lawAccuracy >= 0.9, value: Math.round(scored.lawAccuracy * 1000) / 10 + '%' },
+    { id: 'thumb-fails', pass: scored.thumbAccuracy < 0.75, value: Math.round(scored.thumbAccuracy * 1000) / 10 + '%' },
+    { id: 'shape-image', pass: all(['hex', 'base64'], 'image'), value: count(['hex', 'base64'], 'image') + ' cheaper as an image' },
+    { id: 'shape-text', pass: all(['law', 'code', 'keyvalue'], 'text'), value: count(['law', 'code', 'keyvalue'], 'text') + ' cheaper as text' },
+  ];
+  return { ok: true, rules, passed: rules.filter((r) => r.pass).length, of: rules.length, tally };
 }

@@ -1,0 +1,330 @@
+{
+ "kind": "kar-pixel-cost-counts",
+ "v": 2,
+ "split": "heldout",
+ "model": "claude-sonnet-5",
+ "endpoint": "https://api.anthropic.com/v1/messages/count_tokens",
+ "measuredAt": "2026-09-30T09:42:39.014Z",
+ "rows": [
+  {
+   "id": "prose-01",
+   "textTokens": 102,
+   "imageTokens": 123
+  },
+  {
+   "id": "prose-02",
+   "textTokens": 201,
+   "imageTokens": 169
+  },
+  {
+   "id": "prose-04",
+   "textTokens": 103,
+   "imageTokens": 123
+  },
+  {
+   "id": "prose-05",
+   "textTokens": 121,
+   "imageTokens": 123
+  },
+  {
+   "id": "prose-06",
+   "textTokens": 156,
+   "imageTokens": 169
+  },
+  {
+   "id": "prose-09",
+   "textTokens": 152,
+   "imageTokens": 169
+  },
+  {
+   "id": "prose-11",
+   "textTokens": 194,
+   "imageTokens": 146
+  },
+  {
+   "id": "prose-12",
+   "textTokens": 142,
+   "imageTokens": 169
+  },
+  {
+   "id": "law-01",
+   "textTokens": 114,
+   "imageTokens": 146
+  },
+  {
+   "id": "law-02",
+   "textTokens": 92,
+   "imageTokens": 123
+  },
+  {
+   "id": "law-03",
+   "textTokens": 118,
+   "imageTokens": 169
+  },
+  {
+   "id": "law-04",
+   "textTokens": 121,
+   "imageTokens": 146
+  },
+  {
+   "id": "law-06",
+   "textTokens": 96,
+   "imageTokens": 123
+  },
+  {
+   "id": "law-08",
+   "textTokens": 123,
+   "imageTokens": 146
+  },
+  {
+   "id": "law-11",
+   "textTokens": 106,
+   "imageTokens": 146
+  },
+  {
+   "id": "law-12",
+   "textTokens": 140,
+   "imageTokens": 169
+  },
+  {
+   "id": "code-01",
+   "textTokens": 120,
+   "imageTokens": 146
+  },
+  {
+   "id": "code-03",
+   "textTokens": 234,
+   "imageTokens": 192
+  },
+  {
+   "id": "code-05",
+   "textTokens": 160,
+   "imageTokens": 169
+  },
+  {
+   "id": "code-07",
+   "textTokens": 118,
+   "imageTokens": 192
+  },
+  {
+   "id": "code-08",
+   "textTokens": 163,
+   "imageTokens": 192
+  },
+  {
+   "id": "code-09",
+   "textTokens": 109,
+   "imageTokens": 238
+  },
+  {
+   "id": "code-10",
+   "textTokens": 224,
+   "imageTokens": 192
+  },
+  {
+   "id": "code-12",
+   "textTokens": 105,
+   "imageTokens": 146
+  },
+  {
+   "id": "json-01",
+   "textTokens": 205,
+   "imageTokens": 192
+  },
+  {
+   "id": "json-02",
+   "textTokens": 201,
+   "imageTokens": 215
+  },
+  {
+   "id": "json-03",
+   "textTokens": 188,
+   "imageTokens": 192
+  },
+  {
+   "id": "json-06",
+   "textTokens": 172,
+   "imageTokens": 169
+  },
+  {
+   "id": "json-07",
+   "textTokens": 150,
+   "imageTokens": 146
+  },
+  {
+   "id": "json-09",
+   "textTokens": 154,
+   "imageTokens": 146
+  },
+  {
+   "id": "json-10",
+   "textTokens": 194,
+   "imageTokens": 169
+  },
+  {
+   "id": "json-11",
+   "textTokens": 212,
+   "imageTokens": 169
+  },
+  {
+   "id": "keyvalue-01",
+   "textTokens": 116,
+   "imageTokens": 192
+  },
+  {
+   "id": "keyvalue-02",
+   "textTokens": 156,
+   "imageTokens": 284
+  },
+  {
+   "id": "keyvalue-03",
+   "textTokens": 145,
+   "imageTokens": 215
+  },
+  {
+   "id": "keyvalue-04",
+   "textTokens": 192,
+   "imageTokens": 238
+  },
+  {
+   "id": "keyvalue-05",
+   "textTokens": 184,
+   "imageTokens": 307
+  },
+  {
+   "id": "keyvalue-06",
+   "textTokens": 190,
+   "imageTokens": 238
+  },
+  {
+   "id": "keyvalue-07",
+   "textTokens": 134,
+   "imageTokens": 261
+  },
+  {
+   "id": "keyvalue-09",
+   "textTokens": 138,
+   "imageTokens": 284
+  },
+  {
+   "id": "csv-01",
+   "textTokens": 192,
+   "imageTokens": 192
+  },
+  {
+   "id": "csv-03",
+   "textTokens": 195,
+   "imageTokens": 192
+  },
+  {
+   "id": "csv-04",
+   "textTokens": 184,
+   "imageTokens": 169
+  },
+  {
+   "id": "csv-05",
+   "textTokens": 195,
+   "imageTokens": 192
+  },
+  {
+   "id": "csv-08",
+   "textTokens": 192,
+   "imageTokens": 192
+  },
+  {
+   "id": "csv-09",
+   "textTokens": 178,
+   "imageTokens": 169
+  },
+  {
+   "id": "csv-11",
+   "textTokens": 190,
+   "imageTokens": 192
+  },
+  {
+   "id": "csv-12",
+   "textTokens": 198,
+   "imageTokens": 192
+  },
+  {
+   "id": "hex-01",
+   "textTokens": 319,
+   "imageTokens": 169
+  },
+  {
+   "id": "hex-04",
+   "textTokens": 309,
+   "imageTokens": 169
+  },
+  {
+   "id": "hex-05",
+   "textTokens": 309,
+   "imageTokens": 169
+  },
+  {
+   "id": "hex-06",
+   "textTokens": 295,
+   "imageTokens": 169
+  },
+  {
+   "id": "hex-07",
+   "textTokens": 298,
+   "imageTokens": 169
+  },
+  {
+   "id": "hex-09",
+   "textTokens": 287,
+   "imageTokens": 169
+  },
+  {
+   "id": "hex-10",
+   "textTokens": 296,
+   "imageTokens": 169
+  },
+  {
+   "id": "hex-11",
+   "textTokens": 293,
+   "imageTokens": 169
+  },
+  {
+   "id": "base64-01",
+   "textTokens": 374,
+   "imageTokens": 146
+  },
+  {
+   "id": "base64-03",
+   "textTokens": 309,
+   "imageTokens": 123
+  },
+  {
+   "id": "base64-05",
+   "textTokens": 379,
+   "imageTokens": 146
+  },
+  {
+   "id": "base64-06",
+   "textTokens": 404,
+   "imageTokens": 146
+  },
+  {
+   "id": "base64-07",
+   "textTokens": 288,
+   "imageTokens": 123
+  },
+  {
+   "id": "base64-09",
+   "textTokens": 341,
+   "imageTokens": 146
+  },
+  {
+   "id": "base64-10",
+   "textTokens": 313,
+   "imageTokens": 123
+  },
+  {
+   "id": "base64-12",
+   "textTokens": 377,
+   "imageTokens": 146
+  }
+ ]
+}

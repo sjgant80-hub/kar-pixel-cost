@@ -1,0 +1,33 @@
+{
+ "ok": true,
+ "v": 1,
+ "system": "An experiment's report page: a tested kernel scores committed token counts (measured with Anthropic's count_tokens endpoint by a local script) and renders the findings. The page runs no model and collects nothing.",
+ "asOf": "2026-09-30",
+ "lawChecked": "2026-09-30",
+ "ai": "none",
+ "deployment": "local",
+ "annexIII": null,
+ "aiAct": {
+  "applies": false,
+  "why": "No AI system (Art 3(1)): the build runs no model that infers its outputs, so the AI Act places no duty on it."
+ },
+ "gdpr": {
+  "applies": false,
+  "why": "No personal data is processed, so no GDPR / UK GDPR duty arises from the build."
+ },
+ "items": [],
+ "counts": {
+  "removed": 0,
+  "eased": 0,
+  "yours": 0,
+  "shared": 0,
+  "unchanged": 0
+ },
+ "applying": 0,
+ "inForce": 0,
+ "upcoming": [],
+ "blocking": [],
+ "build": "kar-pixel-cost",
+ "generatedBy": "fall-euaiact comply.mjs",
+ "lawSource": "https://github.com/sjgant80-hub/fall-euaiact/blob/main/law/law.json"
+}

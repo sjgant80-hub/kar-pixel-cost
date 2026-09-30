@@ -1,0 +1,10 @@
+{
+ "declared": true,
+ "name": "kar-pixel-cost",
+ "system": "An experiment's report page: a tested kernel scores committed token counts (measured with Anthropic's count_tokens endpoint by a local script) and renders the findings. The page runs no model and collects nothing.",
+ "ai": "none",
+ "builtBy": "self",
+ "deployment": "local",
+ "personalData": false,
+ "euOutput": true
+}

@@ -6,7 +6,7 @@
 //   node tools/measure.mjs --split calibration|heldout
 import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 import { join, resolve } from 'node:path';
-import { resolve as resolveAuth, OAUTH_BETA } from '../auth.mjs';
+import { resolve as resolveAuth, OAUTH_BETA } from './auth.mjs';
 
 const ROOT = resolve(new URL('..', import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, '$1'));
 const split = process.argv[process.argv.indexOf('--split') + 1];

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>kar-pixel-cost — compliance map</title>
+<meta name="description" content="The EU AI Act, GDPR and UK GDPR map for kar-pixel-cost: role, risk tier, and every duty that applies on its stack, quoted from the primary text and dated." />
+<style>
+:root{--bg:#f6f7f9;--panel:#fff;--ink:#10151c;--muted:#566172;--line:#dde3ea;--good:#0e9f7e;--warn:#c47d0a;--bad:#d2413a;--accent2:#2f6fed}
+@media (prefers-color-scheme:dark){:root{--bg:#0b0d10;--panel:#12161c;--ink:#e7ecf2;--muted:#9aa5b4;--line:#232a34;--good:#39d0a8;--warn:#e8a93a;--bad:#f06a60;--accent2:#6d9bff}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,sans-serif}
+.wrap{max-width:1040px;margin:0 auto;padding:28px 16px 48px}a{color:var(--accent2)}h1{font-size:clamp(1.5rem,4vw,2.2rem);margin:.2rem 0 .4rem;letter-spacing:-.02em}
+.k{font:700 .72rem ui-monospace,Consolas,monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--good)}.sub{color:var(--muted);font-size:.85rem}.mono{font:.8rem ui-monospace,Consolas,monospace;color:var(--muted)}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));margin:16px 0}.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.big{font-size:1.25rem;font-weight:800;margin:.2rem 0}.block{border-color:var(--bad);color:var(--bad)}
+.tw{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:.9rem}th,td{text-align:left;padding:8px;border-bottom:1px solid var(--line);vertical-align:top}th{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+td.n{font-family:ui-monospace,Consolas,monospace;white-space:nowrap}.q{font-size:.85rem;color:var(--muted)}summary{cursor:pointer;font-size:.8rem;color:var(--muted)}
+.chip{font:700 .72rem ui-monospace,Consolas,monospace;padding:.1rem .45rem;border-radius:6px;border:1px solid var(--line);white-space:nowrap}.chip.removed,.chip.eased{color:var(--good);border-color:var(--good)}.chip.yours,.chip.shared{color:var(--warn);border-color:var(--warn)}
+footer{margin-top:28px;color:var(--muted);font-size:.85rem}
+</style>
+</head>
+<body><div class="wrap">
+<div class="k">Compliance map · EU AI Act · GDPR · UK GDPR</div>
+<h1>kar-pixel-cost</h1>
+<p>An experiment's report page: a tested kernel scores committed token counts (measured with Anthropic's count_tokens endpoint by a local script) and renders the findings. The page runs no model and collects nothing.</p>
+<p class="sub">Runs on the owner's own machines · AI: none · map as of 2026-09-30 · law checked 2026-09-30</p>
+
+<div class="grid"><div class="card"><div class="k">EU AI Act</div><p class="big">Not engaged</p><p>No AI system (Art 3(1)): the build runs no model that infers its outputs, so the AI Act places no duty on it.</p></div><div class="card"><div class="k">GDPR / UK GDPR</div><p class="big">Not engaged</p><p>No personal data is processed, so no GDPR / UK GDPR duty arises from the build.</p></div><div class="card"><div class="k">Duties on this stack</div><p class="big">0 apply · 0 in force</p><p class="sub">Nothing further scheduled.</p></div></div>
+
+<h2>The dates</h2>
+<div class="card"><div class="tw"><table><thead><tr><th>From</th><th>What applies</th><th>Where it says so</th></tr></thead><tbody>
+<tr><td class="n">2025-02-02</td><td>AI Act Chapters I and II apply — including Article 4 (AI literacy) and the Article 5 prohibitions</td><td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32026R1744">Art 113, third para, point (a)</a></td></tr>
+<tr><td class="n">2026-02-05</td><td>UK: Data (Use and Access) Act 2025 data protection provisions in force — including section 80 (new Articles 22A–22D on automated decision-making) and section 85 / Schedule 7 (international transfers)</td><td><a href="https://www.legislation.gov.uk/uksi/2026/82/regulation/2">SI 2026/82, reg 2(j), (m), (z9)</a></td></tr>
+<tr><td class="n">2026-07-27</td><td>Digital Omnibus on AI (Regulation (EU) 2026/1744) in force</td><td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32026R1744">Reg 2026/1744, Art 4</a></td></tr>
+<tr><td class="n">2026-08-02</td><td>AI Act general date of application — including Article 50 transparency</td><td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32024R1689">Art 113, second para</a></td></tr>
+<tr><td class="n">2026-12-02</td><td>AI Act Article 50(2) marking for generative systems already on the market before 2 August 2026; and the new Article 5(1) points (ba) and (bb)</td><td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32026R1744">Art 111(4) and Art 113, third para, point (a), as amended by Reg 2026/1744</a></td></tr>
+<tr><td class="n">2027-12-02</td><td>AI Act high-risk obligations (Chapter III, Sections 1–3) for Annex III systems — moved from 2 August 2026 by the Digital Omnibus</td><td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32026R1744">Art 113, third para, point (c)(i), as replaced by Reg 2026/1744</a></td></tr>
+<tr><td class="n">2028-08-02</td><td>AI Act high-risk obligations for Annex I (product-safety) systems</td><td><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32026R1744">Art 113, third para, point (c)(ii), as replaced by Reg 2026/1744</a></td></tr>
+</tbody></table></div></div>
+<footer>Generated by the estate's compliance kernel (<a href="https://sjgant80-hub.github.io/fall-euaiact/">fall-euaiact</a>, comply.mjs) from this build's compliance.decl.json and the verified law at <a href="https://github.com/sjgant80-hub/fall-euaiact/blob/main/law/law.json">law/law.json</a>. Powered by the Konomi architecture, created by Thomas Frumkin.</footer>
+</div></body>
+</html>

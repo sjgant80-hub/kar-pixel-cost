@@ -19,8 +19,8 @@ for (let i = 0; i < 10; i++) {
   rows.push({ word, code });
 }
 
-writeFileSync(new URL('./ground-truth.json', import.meta.url), JSON.stringify({ seed: SEED, rows }, null, 1));
+writeFileSync(new URL('../ground-truth.json', import.meta.url), JSON.stringify({ seed: SEED, rows }, null, 1));
 const lines = rows.map((row) => row.word + ': ' + row.code).join('\n');
-writeFileSync(new URL('./holdout-text.txt', import.meta.url), lines);
+writeFileSync(new URL('../holdout-text.txt', import.meta.url), lines);
 
 console.log('generated ' + rows.length + ' held-out rows (seed ' + SEED + ') -> ground-truth.json + holdout-text.txt. Values not printed here on purpose.');

@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-        with: { node-version: "20" }
+        with: { node-version: "22" }
       - run: node --test kernel.test.mjs
       # Pinned. An unpinned gate is a gate somebody else can change.
       - name: witness — the pure layout math re-proves itself, forever
@@ -16,8 +16,14 @@ jobs:
           grep -q '"clean": true' verdict.txt || { echo "::error::mutants survived — the gate is not clean"; exit 1; }
       - name: page fixpoint — the live page IS the gated kernel AND the real findings
         run: |
-          node make-page.mjs
-          git diff --exit-code index.html
+          node tools/make-page.mjs
+          git diff --exit-code index.html README.md llms.txt
+      - name: the basis — no untraced price, and this repository's own current compliance map
+        run: |
+          git clone --quiet https://github.com/sjgant80-hub/fallstack /tmp/fallstack && git -C /tmp/fallstack checkout --quiet 4eeb828
+          git clone --quiet https://github.com/sjgant80-hub/fall-euaiact /tmp/fall-euaiact && git -C /tmp/fall-euaiact checkout --quiet d522314
+          node /tmp/fallstack/tools/price-check.mjs .
+          node /tmp/fall-euaiact/tools/comply-build.mjs . --check
       - name: the bell — hear the verdict
         if: always()
         run: |
