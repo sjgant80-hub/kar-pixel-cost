@@ -1,0 +1,170 @@
+{
+ "kind": "kar-pixel-cost-counts",
+ "v": 2,
+ "split": "calibration",
+ "model": "claude-sonnet-5",
+ "endpoint": "https://api.anthropic.com/v1/messages/count_tokens",
+ "measuredAt": "2026-09-30T09:40:57.526Z",
+ "rows": [
+  {
+   "id": "prose-03",
+   "textTokens": 123,
+   "imageTokens": 123
+  },
+  {
+   "id": "prose-07",
+   "textTokens": 163,
+   "imageTokens": 169
+  },
+  {
+   "id": "prose-08",
+   "textTokens": 177,
+   "imageTokens": 123
+  },
+  {
+   "id": "prose-10",
+   "textTokens": 162,
+   "imageTokens": 192
+  },
+  {
+   "id": "law-05",
+   "textTokens": 102,
+   "imageTokens": 146
+  },
+  {
+   "id": "law-07",
+   "textTokens": 131,
+   "imageTokens": 169
+  },
+  {
+   "id": "law-09",
+   "textTokens": 117,
+   "imageTokens": 146
+  },
+  {
+   "id": "law-10",
+   "textTokens": 131,
+   "imageTokens": 169
+  },
+  {
+   "id": "code-02",
+   "textTokens": 142,
+   "imageTokens": 169
+  },
+  {
+   "id": "code-04",
+   "textTokens": 163,
+   "imageTokens": 192
+  },
+  {
+   "id": "code-06",
+   "textTokens": 133,
+   "imageTokens": 169
+  },
+  {
+   "id": "code-11",
+   "textTokens": 107,
+   "imageTokens": 169
+  },
+  {
+   "id": "json-04",
+   "textTokens": 188,
+   "imageTokens": 192
+  },
+  {
+   "id": "json-05",
+   "textTokens": 199,
+   "imageTokens": 169
+  },
+  {
+   "id": "json-08",
+   "textTokens": 153,
+   "imageTokens": 146
+  },
+  {
+   "id": "json-12",
+   "textTokens": 161,
+   "imageTokens": 146
+  },
+  {
+   "id": "keyvalue-08",
+   "textTokens": 193,
+   "imageTokens": 307
+  },
+  {
+   "id": "keyvalue-10",
+   "textTokens": 162,
+   "imageTokens": 284
+  },
+  {
+   "id": "keyvalue-11",
+   "textTokens": 188,
+   "imageTokens": 261
+  },
+  {
+   "id": "keyvalue-12",
+   "textTokens": 183,
+   "imageTokens": 238
+  },
+  {
+   "id": "csv-02",
+   "textTokens": 192,
+   "imageTokens": 192
+  },
+  {
+   "id": "csv-06",
+   "textTokens": 184,
+   "imageTokens": 169
+  },
+  {
+   "id": "csv-07",
+   "textTokens": 184,
+   "imageTokens": 169
+  },
+  {
+   "id": "csv-10",
+   "textTokens": 174,
+   "imageTokens": 169
+  },
+  {
+   "id": "hex-02",
+   "textTokens": 306,
+   "imageTokens": 169
+  },
+  {
+   "id": "hex-03",
+   "textTokens": 301,
+   "imageTokens": 169
+  },
+  {
+   "id": "hex-08",
+   "textTokens": 305,
+   "imageTokens": 169
+  },
+  {
+   "id": "hex-12",
+   "textTokens": 309,
+   "imageTokens": 169
+  },
+  {
+   "id": "base64-02",
+   "textTokens": 297,
+   "imageTokens": 123
+  },
+  {
+   "id": "base64-04",
+   "textTokens": 346,
+   "imageTokens": 146
+  },
+  {
+   "id": "base64-08",
+   "textTokens": 276,
+   "imageTokens": 123
+  },
+  {
+   "id": "base64-11",
+   "textTokens": 369,
+   "imageTokens": 146
+  }
+ ]
+}

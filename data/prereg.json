@@ -1,0 +1,125 @@
+{
+ "kind": "kar-pixel-cost-prereg",
+ "v": 2,
+ "written": "2026-09-30",
+ "statement": "Fixed after counting the calibration third and BEFORE counting the held-out two thirds. The held-out result is reported whichever way it lands.",
+ "question": "Can the real token cost of a rendered text image be predicted from its pixel size alone — and does that, with the text token count, pick the cheaper encoding? Is chars-per-text-token (v1's framing) enough on its own?",
+ "inputs": {
+  "corpusSha256": "99e57cbd9e05487905c47929e36014fdf49b91800486ab3b34345be9e614e5ce",
+  "rendersSha256": "cb2b6dcf95553d0aedf8fbcca65d98362813e718979fc2eb8609439111e4d031",
+  "calibrationCountsSha256": "405b87eacd944be2b94c1b9a6ef69bea200896f1b9a999f7e66dbe0516dc27a7",
+  "model": "claude-sonnet-5",
+  "metrics": {
+   "charWidthPx": 8.796875,
+   "fontPx": 16,
+   "maxWidthPx": 640,
+   "pad": 12
+  }
+ },
+ "law": {
+  "form": "real image tokens = a × ceil(width × height / 750) + b, least squares on the 32 calibration samples",
+  "a": 1.008871,
+  "b": 7.6873,
+  "n": 32
+ },
+ "thumb": {
+  "form": "image is cheaper when characters per text token < c*, for full lines of this renderer",
+  "cStar": 3.535
+ },
+ "heldout": {
+  "n": 64,
+  "ids": [
+   "prose-01",
+   "prose-02",
+   "prose-04",
+   "prose-05",
+   "prose-06",
+   "prose-09",
+   "prose-11",
+   "prose-12",
+   "law-01",
+   "law-02",
+   "law-03",
+   "law-04",
+   "law-06",
+   "law-08",
+   "law-11",
+   "law-12",
+   "code-01",
+   "code-03",
+   "code-05",
+   "code-07",
+   "code-08",
+   "code-09",
+   "code-10",
+   "code-12",
+   "json-01",
+   "json-02",
+   "json-03",
+   "json-06",
+   "json-07",
+   "json-09",
+   "json-10",
+   "json-11",
+   "keyvalue-01",
+   "keyvalue-02",
+   "keyvalue-03",
+   "keyvalue-04",
+   "keyvalue-05",
+   "keyvalue-06",
+   "keyvalue-07",
+   "keyvalue-09",
+   "csv-01",
+   "csv-03",
+   "csv-04",
+   "csv-05",
+   "csv-08",
+   "csv-09",
+   "csv-11",
+   "csv-12",
+   "hex-01",
+   "hex-04",
+   "hex-05",
+   "hex-06",
+   "hex-07",
+   "hex-09",
+   "hex-10",
+   "hex-11",
+   "base64-01",
+   "base64-03",
+   "base64-05",
+   "base64-06",
+   "base64-07",
+   "base64-09",
+   "base64-10",
+   "base64-12"
+  ]
+ },
+ "rules": [
+  {
+   "id": "cost-law",
+   "rule": "the law predicts each held-out image's real token count: median absolute error ≤ 3% and worst ≤ 10%"
+  },
+  {
+   "id": "decision",
+   "rule": "the law plus the text token count picks the cheaper encoding on ≥ 90% of held-out samples (a tie counts either way)"
+  },
+  {
+   "id": "thumb-fails",
+   "rule": "chars-per-text-token alone (the one-number rule) picks correctly on < 75% of held-out samples — image cost follows rendered area, and short lines waste it"
+  },
+  {
+   "id": "shape-image",
+   "rule": "every held-out hex and base64 sample (16) is cheaper as an image"
+  },
+  {
+   "id": "shape-text",
+   "rule": "every held-out law, code and key=value sample (24) is cheaper as text"
+  }
+ ],
+ "alsoReported": [
+  "prose, JSON and CSV per sample — the calibration third put them near break-even, so no direction is predicted",
+  "the mean saving per shape",
+  "the law's error per sample"
+ ]
+}

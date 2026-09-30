@@ -1,4 +1,5 @@
-tools/
+tools/witness.mjs
+tools/runner.mjs
 gate.out
 verdict.txt
 prose.b64

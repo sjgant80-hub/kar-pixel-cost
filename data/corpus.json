@@ -1,0 +1,790 @@
+{
+ "kind": "kar-pixel-cost-corpus",
+ "v": 2,
+ "seed": 20260930,
+ "shapes": [
+  "prose",
+  "law",
+  "code",
+  "json",
+  "keyvalue",
+  "csv",
+  "hex",
+  "base64"
+ ],
+ "perShape": 12,
+ "charRange": [
+  280,
+  460
+ ],
+ "samples": [
+  {
+   "id": "prose-01",
+   "shape": "prose",
+   "chars": 285,
+   "text": "What has to be true: nothing about seats — local-first costs less at any seat coverage, even with no Copilot seats at all, because the staff time on the work is on the corporate bill either way. The floor carries the work at 16.9% of the enrolled laptops in year 1 and 29.6% in year 5.",
+   "source": "fallfloor-enterprise@8e83f02:README.md",
+   "split": "heldout"
+  },
+  {
+   "id": "prose-02",
+   "shape": "prose",
+   "chars": 455,
+   "text": "The estate's dual-map decision gate. Its positive/negative maps, the non-compensating (max) aggregator, the TOA hard gate, law-as-evidence (never the verdict), PASS/BLOCK/PENDING, the escort weighting at q_E,0 = 0.7 (a reproducible baseline, not a universal constant), and the audit-receipt schema draw on Gary W. Floyd, Lumiea Systems Research Division — ThunderStruck Service LLC — \"From GEP Stabilization to Dual-Map Ethical Reasoning,\" Derivation v0.2",
+   "source": "dual-map@3ca840f:README.md",
+   "split": "heldout"
+  },
+  {
+   "id": "prose-03",
+   "shape": "prose",
+   "chars": 316,
+   "text": "Serve render-harness.html and call window.render(text, {fontPx, maxWidthPx}) in the browser to get {width, height, dataUrl} &mdash; wrap the dataUrl's base64 payload in an image content block and pass it to count-tokens.mjs for the real image-token count. Full step-by-step is in findings.json's own reproduce field.",
+   "source": "kar-pixel-cost@9f18719:README.md",
+   "split": "calibration"
+  },
+  {
+   "id": "prose-04",
+   "shape": "prose",
+   "chars": 307,
+   "text": "konomify's basis gate runs the check on every build: no declaration, a hand-edited or stale map (older than the law, or than 180 days), or a declared Article 5 practice, and the build does not pass. This repository carries its own: compliance.html. The page's R7 section runs the same kernel in the browser.",
+   "source": "fall-euaiact@d522314:README.md",
+   "split": "heldout"
+  },
+  {
+   "id": "prose-05",
+   "shape": "prose",
+   "chars": 341,
+   "text": "\"We'll automate it with a cloud API instead\": That is the route where customer data leaves the building: a processor contract with the model vendor (GDPR Art 28), transfer assessments (Chapter V), a per-token bill — and the Copilot seats are still on every desk. Five years on that route: £3,595,271 — still £2,025,205 more than local-first.",
+   "source": "fallfloor-enterprise@8e83f02:README.md",
+   "split": "heldout"
+  },
+  {
+   "id": "prose-06",
+   "shape": "prose",
+   "chars": 442,
+   "text": "Each deployment decision is a dual-map case built from fallfloor's receipted evidence and this design's published policy thresholds: a positive map (what the evidence supports) beside a negative map (the evidence-supported ways it fails). One severe, evidence-backed failure BLOCKs; an unmeasured risk holds at PENDING. Each verdict is sealed into a self-verifying receipt; the page re-verifies them and shows a forged verdict being rejected.",
+   "source": "fallfloor-enterprise@8e83f02:README.md",
+   "split": "heldout"
+  },
+  {
+   "id": "prose-07",
+   "shape": "prose",
+   "chars": 440,
+   "text": "18 tests. The two pure functions behind the renderer &mdash; tokensForImage (Anthropic's documented formula, pinned against a real-world example: Anthropic's own 1092&times;1092 max-recommended-edge figure) and layoutPixels (the character-wrapping math) &mdash; are gated. The empirical parts (the real API calls, the vision read) are not gated, and this repo doesn't pretend otherwise; they're documented honestly in findings.json instead.",
+   "source": "kar-pixel-cost@9f18719:README.md",
+   "split": "calibration"
+  },
+  {
+   "id": "prose-08",
+   "shape": "prose",
+   "chars": 322,
+   "text": "Go/no-go method: Gary W. Floyd, Lumiea Systems Research Division — ThunderStruck Service LLC — \"From GEP Stabilization to Dual-Map Ethical Reasoning,\" Derivation v0.2. Evidence: fallfloor, on Banking77 (PolyAI, CC BY 4.0), SMS Spam Collection (Almeida and Gómez Hidalgo, CC BY 4.0) and CLINC150 (Larson et al., CC BY 3.0).",
+   "source": "fallfloor-enterprise@8e83f02:README.md",
+   "split": "calibration"
+  },
+  {
+   "id": "prose-09",
+   "shape": "prose",
+   "chars": 459,
+   "text": "comply.mjs (mutation-gated) is the compliance map every estate build ships. A build declares what it does in compliance.decl.json: does it run an AI system (none / narrow / generative), who built it (provider or deployer), where it runs (local / cloud / SaaS), does it touch personal data, talk to the public, generate content, make significant decisions about people, fall under Annex III or Article 5, is its output used in the EU. The kernel returns its EU",
+   "source": "fall-euaiact@d522314:README.md",
+   "split": "heldout"
+  },
+  {
+   "id": "prose-10",
+   "shape": "prose",
+   "chars": 459,
+   "text": "No price in this repository is typed. prices.lock.json holds the registry entries this cost case uses, pulled from fallstack; sources/prices.json and sources/organs.json are generated from it by tools/pull-basis.mjs. The compliance map on the page runs fall-euaiact's compliance kernel (comply.mjs, with its tests and law/law.json, verbatim). This page has its own map too: compliance.html. CI checks all of it against both repositories at pinned commits, and",
+   "source": "fallfloor-enterprise@8e83f02:README.md",
+   "split": "calibration"
+  },
+  {
+   "id": "prose-11",
+   "shape": "prose",
+   "chars": 355,
+   "text": "Go / no-go board, sealed from fallfloor's receipted evidence: 2 PASS · 2 BLOCK · 3 PENDING (support-unsupervised BLOCK, support-assisted PENDING, screening-auto BLOCK, screening-review PENDING, hr-routing PASS, floor-async PASS, credit-decisions PENDING). Board hash d9b92b13d58c089eceaadfde00ae06ad8153be55b21c195b41c0e6f9dabef406. <!-- ⟦RESULTS-END⟧ -->",
+   "source": "fallfloor-enterprise@8e83f02:README.md",
+   "split": "heldout"
+  },
+  {
+   "id": "prose-12",
+   "shape": "prose",
+   "chars": 458,
+   "text": "Open the live page on a second computer with Chrome or Edge (WebGPU), open Run it yourself, load a model, then swap two codes with a node on the first machine (offer → answer). On the same network no server is involved; across networks, tick \"use a public STUN server\" (it only helps the two machines find each other's address — no traffic goes through it). The measured run in this repo used one laptop: every node was a separate Chrome process with its own",
+   "source": "fallfloor@65d60c7:README.md",
+   "split": "heldout"
+  },
+  {
+   "id": "law-01",
+   "shape": "law",
+   "chars": 356,
+   "text": "Deployers shall assign human oversight to natural persons who have the necessary competence, training and authority … keep the logs automatically generated by that high-risk AI system … of at least six months deployers of high-risk AI systems referred to in points 5 (b) and (c) of Annex III, shall perform an assessment of the impact on fundamental rights",
+   "source": "fall-euaiact@d522314:law/law.json",
+   "split": "heldout"
+  },
+  {
+   "id": "law-02",
+   "shape": "law",
+   "chars": 323,
+   "text": "providers and deployers of AI systems that have their place of establishment or are located in a third country, where the output produced by the AI system is used in the Union ‘putting into service’ means the supply of an AI system for first use directly to the deployer or for own use in the Union for its intended purpose",
+   "source": "fall-euaiact@d522314:law/law.json",
+   "split": "heldout"
+  },
+  {
+   "id": "law-03",
+   "shape": "law",
+   "chars": 420,
+   "text": "Providers and deployers of AI systems shall take measures to support the development of AI literacy of their staff and other persons dealing with the operation and use of AI systems on their behalf Providers shall ensure that AI systems intended to interact directly with natural persons are designed and developed in such a way that the natural persons concerned are informed that they are interacting with an AI system",
+   "source": "fall-euaiact@d522314:law/law.json",
+   "split": "heldout"
+  },
+  {
+   "id": "law-04",
+   "shape": "law",
+   "chars": 382,
+   "text": "Processing shall be lawful only if and to the extent that at least one of the following applies EU: “the right not to be subject to a decision based solely on automated processing … which produces legal effects … or similarly significantly affects him or her”. UK: safeguards must “enable the data subject to obtain human intervention … [and] to contest such decisions” (Art 22C(2))",
+   "source": "fall-euaiact@d522314:law/law.json",
+   "split": "heldout"
+  },
+  {
+   "id": "law-05",
+   "shape": "law",
+   "chars": 345,
+   "text": "‘putting into service’ means the supply of an AI system for first use directly to the deployer or for own use in the Union for its intended purpose Providers and deployers of AI systems shall take measures to support the development of AI literacy of their staff and other persons dealing with the operation and use of AI systems on their behalf",
+   "source": "fall-euaiact@d522314:law/law.json",
+   "split": "calibration"
+  },
+  {
+   "id": "law-06",
+   "shape": "law",
+   "chars": 286,
+   "text": "EU: “the right not to be subject to a decision based solely on automated processing … which produces legal effects … or similarly significantly affects him or her”. UK: safeguards must “enable the data subject to obtain human intervention … [and] to contest such decisions” (Art 22C(2))",
+   "source": "fall-euaiact@d522314:law/law.json",
+   "split": "heldout"
+  },
+  {
+   "id": "law-07",
+   "shape": "law",
+   "chars": 448,
+   "text": "Providers shall ensure that AI systems intended to interact directly with natural persons are designed and developed in such a way that the natural persons concerned are informed that they are interacting with an AI system Providers of AI systems, including general-purpose AI systems, generating synthetic audio, image, video or text content, shall ensure that the outputs of the AI system are marked in a machine-readable format and detectable as",
+   "source": "fall-euaiact@d522314:law/law.json",
+   "split": "calibration"
+  },
+  {
+   "id": "law-08",
+   "shape": "law",
+   "chars": 411,
+   "text": "(b) AI systems intended to be used to evaluate the creditworthiness of natural persons or establish their credit score, with the exception of AI systems used for the purpose of detecting financial fraud Deployers shall assign human oversight to natural persons who have the necessary competence, training and authority … keep the logs automatically generated by that high-risk AI system … of at least six months",
+   "source": "fall-euaiact@d522314:law/law.json",
+   "split": "heldout"
+  },
+  {
+   "id": "law-09",
+   "shape": "law",
+   "chars": 413,
+   "text": "the controller and the processor shall implement appropriate technical and organisational measures to ensure a level of security appropriate to the risk ICO: “Innovative technology: processing involving the use of innovative technologies, or the novel application of existing technologies (including AI). A DPIA is required where this processing is combined with any of the criteria from the European guidelines.”",
+   "source": "fall-euaiact@d522314:law/law.json",
+   "split": "calibration"
+  },
+  {
+   "id": "law-10",
+   "shape": "law",
+   "chars": 457,
+   "text": "ICO: “Innovative technology: processing involving the use of innovative technologies, or the novel application of existing technologies (including AI). A DPIA is required where this processing is combined with any of the criteria from the European guidelines.” Any transfer of personal data which are undergoing processing or are intended for processing after transfer to a third country … shall take place only if … the conditions laid down in this Chapter",
+   "source": "fall-euaiact@d522314:law/law.json",
+   "split": "calibration"
+  },
+  {
+   "id": "law-11",
+   "shape": "law",
+   "chars": 371,
+   "text": "The following AI practices shall be prohibited: providers and deployers of AI systems that have their place of establishment or are located in a third country, where the output produced by the AI system is used in the Union ‘putting into service’ means the supply of an AI system for first use directly to the deployer or for own use in the Union for its intended purpose",
+   "source": "fall-euaiact@d522314:law/law.json",
+   "split": "heldout"
+  },
+  {
+   "id": "law-12",
+   "shape": "law",
+   "chars": 451,
+   "text": "Providers of AI systems, including general-purpose AI systems, generating synthetic audio, image, video or text content, shall ensure that the outputs of the AI system are marked in a machine-readable format and detectable as artificially generated or manipulated. (b) AI systems intended to be used to evaluate the creditworthiness of natural persons or establish their credit score, with the exception of AI systems used for the purpose of detecting",
+   "source": "fall-euaiact@d522314:law/law.json",
+   "split": "heldout"
+  },
+  {
+   "id": "code-01",
+   "shape": "code",
+   "chars": 307,
+   "text": "// NON-MASKING (v0.3): a composite is only as sound as its weakest part. A clean `main` that imports a\n// broken sub-module used to PASS — the stable half masked the runaway half (the same bug class as a\n// vacuous payload-hash: `elite ≠ correct` hiding inside a green aggregate). So we gate every top-level",
+   "source": "konomify@c6344a0:konomify.mjs",
+   "split": "heldout"
+  },
+  {
+   "id": "code-02",
+   "shape": "code",
+   "chars": 320,
+   "text": "/** exVat(amount, vat, rate) — a price net of VAT. 'excluded' and 'not stated' are taken as net (a vendor that does\n *  not state VAT is quoting its list price); 'included' is divided out. */\nexport function exVat(amount, vat, rate) {\n  if (!isNum(amount) || !VATS.includes(vat) || !isNum(rate) || rate < 0) return null;",
+   "source": "fallstack@4eeb828:prices.mjs",
+   "split": "calibration"
+  },
+  {
+   "id": "code-03",
+   "shape": "code",
+   "chars": 460,
+   "text": "  lines.push({ id: 'local-power', side: 'local', label: 'Electricity for the AI work on the laptops (' + Math.round(cap.perYear[0].laptopHours).toLocaleString('en-GB') + ' laptop-hours a month in year 1)', basis: 'estimate', why: 'laptop-hours (measured and fitted) × ' + fl.watts.value + ' W × ' + el.pencePerKwh + 'p/kWh (DESNZ non-domestic), rising with CPI', perYear: Y((i) => cap.perYear[i].laptopHours * 12 * fl.watts.value / 1000 * el.pencePerKwh / 100 ",
+   "source": "fallfloor-enterprise@8e83f02:kernel.mjs",
+   "split": "heldout"
+  },
+  {
+   "id": "code-04",
+   "shape": "code",
+   "chars": 316,
+   "text": "  const len = data.length;\n  const padded = new Uint8Array((((len + 8) >> 6) << 6) + 64);\n  padded.set(data);\n  padded[len] = 0x80;\n  const dv = new DataView(padded.buffer);\n  const bitLen = len * 8;\n  dv.setUint32(padded.length - 8, Math.floor(bitLen / 4294967296));\n  dv.setUint32(padded.length - 4, bitLen >>> 0);",
+   "source": "fallfloor@65d60c7:kernel.mjs",
+   "split": "calibration"
+  },
+  {
+   "id": "code-05",
+   "shape": "code",
+   "chars": 307,
+   "text": "<div style=\"max-width:520px\">\n  <div style=\"letter-spacing:.2em;color:#8b93a7;font-size:11px\">KONOMI RECEIPT · niceassos-mesh</div>\n  <h1 style=\"font:400 30px Georgia,serif;color:#a78bfa;margin:10px 0 4px\">${repo}</h1>\n  <div style=\"color:#4ade80\">konomified — metabolized to spec, grafted to the mesh</div>",
+   "source": "konomify@c6344a0:konomify.mjs",
+   "split": "heldout"
+  },
+  {
+   "id": "code-06",
+   "shape": "code",
+   "chars": 336,
+   "text": "/** sourced(f) — { basis, source?, checked?, why? }: a list price needs an https source and the date checked; a\n *  measured figure needs its source; an estimate or assumption needs the reason in words. */\nexport function sourced(f) {\n  if (!isObj(f) || !BASES.includes(f.basis)) return fail('basis must be one of ' + BASES.join(', '));",
+   "source": "fallfloor-enterprise@8e83f02:kernel.mjs",
+   "split": "calibration"
+  },
+  {
+   "id": "code-07",
+   "shape": "code",
+   "chars": 281,
+   "text": "    basis: grounds ? { compliance: grounds.compliance ?? null, prices: grounds.prices ?? null } : null,\n  };\n\n  // CARD — mint the receipt as a fallkard card, if the forge stages are wired.\n  let card = null;\n  if (typeof forge === 'function' && typeof renderCard === 'function') {",
+   "source": "konomify@c6344a0:konomify.mjs",
+   "split": "heldout"
+  },
+  {
+   "id": "code-08",
+   "shape": "code",
+   "chars": 329,
+   "text": "  let bestTier = MINIMAL.tier, bestLabel = MINIMAL.label;\n  for (const tier of RULES) {\n    for (const trig of tier.triggers) {\n      if (trig.re.test(t)) hits.push({ tier: tier.tier, note: trig.note, art: trig.art });\n    }\n    if (hits.some((h) => h.tier === tier.tier)) { bestTier = tier.tier; bestLabel = tier.label; break; }",
+   "source": "fall-euaiact@d522314:kernel.mjs",
+   "split": "heldout"
+  },
+  {
+   "id": "code-09",
+   "shape": "code",
+   "chars": 333,
+   "text": "const fail = (why) => ({ ok: false, why });\n\n// ══════════════════════════════════════════════════════════════════════════════════════════════════\n// SOURCED FIGURES — nothing enters the cost model without saying where it came from\n// ══════════════════════════════════════════════════════════════════════════════════════════════════",
+   "source": "fallfloor-enterprise@8e83f02:kernel.mjs",
+   "split": "heldout"
+  },
+  {
+   "id": "code-10",
+   "shape": "code",
+   "chars": 342,
+   "text": "  dv.setUint32(padded.length - 4, bitLen >>> 0);\n  let h0 = 0x6a09e667, h1 = 0xbb67ae85, h2 = 0x3c6ef372, h3 = 0xa54ff53a;\n  let h4 = 0x510e527f, h5 = 0x9b05688c, h6 = 0x1f83d9ab, h7 = 0x5be0cd19;\n  const w = new Uint32Array(64);\n  for (let i = 0; i < padded.length; i += 64) {\n    for (let t = 0; t < 16; t++) w[t] = dv.getUint32(i + t * 4);",
+   "source": "fallfloor@65d60c7:kernel.mjs",
+   "split": "heldout"
+  },
+  {
+   "id": "code-11",
+   "shape": "code",
+   "chars": 326,
+   "text": "// CAPACITY — everything runs on the laptops the company already owns. Seconds per item are MEASURED (fallfloor) for\n// the measured workloads; for the others they come from per-token rates fitted to those same measurements.\n// ══════════════════════════════════════════════════════════════════════════════════════════════════",
+   "source": "fallfloor-enterprise@8e83f02:kernel.mjs",
+   "split": "calibration"
+  },
+  {
+   "id": "code-12",
+   "shape": "code",
+   "chars": 302,
+   "text": "//                       tests. A surviving mutant is a line the tests do not actually guard.\n//   3. THE GATE       — not admissible, OR mutants survived? STOP. Report what is undercooked and send\n//                       it back to the pan. Waste is NOT grown into an organ. The honest edge: konomify",
+   "source": "konomify@c6344a0:konomify.mjs",
+   "split": "heldout"
+  },
+  {
+   "id": "json-01",
+   "shape": "json",
+   "chars": 453,
+   "text": "{\"id\":\"ons-cpi\",\"kind\":\"rate\",\"value\":0.031,\"what\":\"UK Consumer Prices Index, 12-month rate to August 2026\",\"quote\":\"The Consumer Prices Index (CPI) rose by 3.1% in the 12 months to August 2026\",\"publisher\":\"ONS, Consumer price inflation, UK: August 2026 (released 16 September 2026)\",\"source\":\"https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/august2026\",\"checked\":\"2026-09-29\",\"how\":\"Applied every year to seats",
+   "source": "fallstack@4eeb828:registry/prices.json",
+   "split": "heldout"
+  },
+  {
+   "id": "json-02",
+   "shape": "json",
+   "chars": 460,
+   "text": "{\"id\":\"salesforce-pro-suite\",\"kind\":\"saas\",\"vendor\":\"Salesforce\",\"product\":\"Salesforce Pro Suite\",\"function\":\"crm\",\"price\":80,\"currency\":\"GBP\",\"per\":\"user / month, billed annually\",\"vat\":\"not stated\",\"quote\":\"£ 80 GBP/User/Month (Billed annually)\",\"note\":\"The flexible CRM suite across sales, service, marketing and commerce; the cheapest paid suite above the small-team Starter.\",\"source\":\"https://www.salesforce.com/uk/sales/pricing/\",\"checked\":\"2026-09-30\"}",
+   "source": "fallstack@4eeb828:registry/prices.json",
+   "split": "heldout"
+  },
+  {
+   "id": "json-03",
+   "shape": "json",
+   "chars": 449,
+   "text": "{\"id\":\"salesforce-2025-rise\",\"kind\":\"rise\",\"what\":\"Salesforce raised list prices for its Enterprise and Unlimited editions of Sales Cloud, Service Cloud, Field Service and select Industries Clouds by an average of 6% on 1 August 2025; Starter and Pro editions were not changed.\",\"quote\":\"On August 1, 2025, list prices will increase by an average of 6%.\",\"low\":0.06,\"high\":0.06,\"source\":\"https://www.salesforce.com/news/stories/pricing-update-2025/\"",
+   "source": "fallstack@4eeb828:registry/prices.json",
+   "split": "heldout"
+  },
+  {
+   "id": "json-04",
+   "shape": "json",
+   "chars": 410,
+   "text": "{\"id\":\"salesforce-core\",\"kind\":\"saas\",\"vendor\":\"Salesforce\",\"product\":\"Salesforce Core (Sales)\",\"function\":\"crm\",\"price\":156,\"currency\":\"GBP\",\"per\":\"user / month, billed annually\",\"vat\":\"not stated\",\"quote\":\"£ 156 GBP/User/Month (Billed annually)\",\"note\":\"The CRM for sales with built-in AI, Slack, Tableau and Agentforce skills.\",\"source\":\"https://www.salesforce.com/uk/sales/pricing/\",\"checked\":\"2026-09-30\"}",
+   "source": "fallstack@4eeb828:registry/prices.json",
+   "split": "calibration"
+  },
+  {
+   "id": "json-05",
+   "shape": "json",
+   "chars": 419,
+   "text": "{\"id\":\"microsoft-365-2026-rise\",\"kind\":\"rise\",\"what\":\"Microsoft's 1 July 2026 update raised Microsoft 365 plan prices — from 5% (Microsoft 365 E5, US$57 to US$60) to 33% (Microsoft 365 F1, US$2.25 to US$3.00). Microsoft 365 Copilot is not among the plans in that price table: the Copilot seat on this page is Microsoft's current UK list price.\",\"quote\":\"Pricing updates take effect July 1, 2026.\",\"low\":0.05,\"high\":0.33",
+   "source": "fallstack@4eeb828:registry/prices.json",
+   "split": "calibration"
+  },
+  {
+   "id": "json-06",
+   "shape": "json",
+   "chars": 376,
+   "text": "{\"id\":\"dynamics-365-finance\",\"kind\":\"saas\",\"vendor\":\"Microsoft\",\"product\":\"Dynamics 365 Finance\",\"function\":\"finance\",\"price\":161.5,\"currency\":\"GBP\",\"per\":\"user / month, paid yearly\",\"vat\":\"excluded\",\"quote\":\"£161.50 user/month, paid yearly … Price does not include VAT.\",\"source\":\"https://www.microsoft.com/en-gb/dynamics-365/products/finance/pricing\",\"checked\":\"2026-09-30\"}",
+   "source": "fallstack@4eeb828:registry/prices.json",
+   "split": "heldout"
+  },
+  {
+   "id": "json-07",
+   "shape": "json",
+   "chars": 329,
+   "text": "{\"id\":\"chatgpt-business\",\"kind\":\"seat\",\"product\":\"ChatGPT Business (standard seat)\",\"price\":15,\"currency\":\"GBP\",\"per\":\"seat / month, billed annually\",\"vat\":\"not stated\",\"quote\":\"Standard seat £15 / month … £15/month if billed annually.\",\"addOn\":null,\"maxSeats\":null,\"source\":\"https://chatgpt.com/pricing/\",\"checked\":\"2026-09-29\"}",
+   "source": "fallstack@4eeb828:registry/prices.json",
+   "split": "heldout"
+  },
+  {
+   "id": "json-08",
+   "shape": "json",
+   "chars": 356,
+   "text": "{\"id\":\"intel-i7-1255u-power\",\"kind\":\"power\",\"wattsLow\":15,\"wattsHigh\":55,\"chip\":\"Intel Core i7-1255U\",\"how\":\"Intel's published figures for the chip: Processor Base Power 15 W (the rated sustained power) and Maximum Turbo Power 55 W. The model uses 15 W for the extra draw of AI work on a laptop that is already on for the employee — change it on the page.\"",
+   "source": "fallstack@4eeb828:registry/prices.json",
+   "split": "calibration"
+  },
+  {
+   "id": "json-09",
+   "shape": "json",
+   "chars": 345,
+   "text": "{\"id\":\"claude-team\",\"kind\":\"seat\",\"product\":\"Claude Team (standard seat)\",\"price\":18,\"currency\":\"GBP\",\"per\":\"seat / month, billed annually\",\"vat\":\"included\",\"quote\":\"For teams of 2 to 150 … £18 Per seat / month if billed annually … Prices include 20% VAT\",\"addOn\":null,\"maxSeats\":150,\"source\":\"https://claude.com/pricing\",\"checked\":\"2026-09-29\"}",
+   "source": "fallstack@4eeb828:registry/prices.json",
+   "split": "heldout"
+  },
+  {
+   "id": "json-10",
+   "shape": "json",
+   "chars": 418,
+   "text": "{\"id\":\"ofgem-price-cap-2026-q4\",\"kind\":\"energy\",\"pencePerKwh\":26.32,\"period\":\"1 October to 31 December 2026\",\"how\":\"Ofgem energy price cap, GB average electricity unit rate, Direct Debit. The page states there is no VAT on electricity from 1 October 2026 to 31 March 2027.\",\"source\":\"https://www.ofgem.gov.uk/your-energy-supply/your-energy-bill/energy-price-cap-unit-rates-and-standing-charges\",\"checked\":\"2026-09-29\"}",
+   "source": "fallstack@4eeb828:registry/prices.json",
+   "split": "heldout"
+  },
+  {
+   "id": "json-11",
+   "shape": "json",
+   "chars": 456,
+   "text": "{\"id\":\"ons-ashe-2025-it-salaries\",\"kind\":\"salaries\",\"what\":\"ONS, Annual Survey of Hours and Earnings 2025 (provisional), Table 14.7a, median gross annual pay, full-time employee jobs, United Kingdom\",\"source\":\"https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/datasets/occupation4digitsoc2010ashetable14\",\"checked\":\"2026-09-29\",\"roles\":{\"2132\":{\"title\":\"IT managers\",\"median\":56438},\"2133\":{\"title\":\"IT business analysts",
+   "source": "fallstack@4eeb828:registry/prices.json",
+   "split": "heldout"
+  },
+  {
+   "id": "json-12",
+   "shape": "json",
+   "chars": 385,
+   "text": "{\"id\":\"uk-national-living-wage\",\"kind\":\"rate\",\"value\":12.71,\"what\":\"National Living Wage (21 and over), per hour, from 1 April 2026 — the legal floor, used as the cost of an hour of the staff time the AI takes over\",\"quote\":\"National Living Wage (21 and over) £12.71\",\"source\":\"https://www.gov.uk/government/news/national-living-wage-increases-to-1271-per-hour\",\"checked\":\"2026-09-29\"}",
+   "source": "fallstack@4eeb828:registry/prices.json",
+   "split": "calibration"
+  },
+  {
+   "id": "keyvalue-01",
+   "shape": "keyvalue",
+   "chars": 285,
+   "text": "id=boe-inflation-target\nkind=rate\nvalue=0.02\nwhat=The UK inflation target the Government sets the Bank of England — used only in the sensitivity table\nquote=The Government sets us a 2% inflation target\nsource=https://www.bankofengland.co.uk/monetary-policy/inflation\nchecked=2026-09-29",
+   "source": "fallstack@4eeb828:registry/prices.json",
+   "split": "heldout"
+  },
+  {
+   "id": "keyvalue-02",
+   "shape": "keyvalue",
+   "chars": 328,
+   "text": "id=dynamics-365-finance\nkind=saas\nvendor=Microsoft\nproduct=Dynamics 365 Finance\nfunction=finance\nprice=161.5\ncurrency=GBP\nper=user / month, paid yearly\nvat=excluded\nquote=£161.50 user/month, paid yearly … Price does not include VAT.\nsource=https://www.microsoft.com/en-gb/dynamics-365/products/finance/pricing\nchecked=2026-09-30",
+   "source": "fallstack@4eeb828:registry/prices.json",
+   "split": "heldout"
+  },
+  {
+   "id": "keyvalue-03",
+   "shape": "keyvalue",
+   "chars": 335,
+   "text": "id=intel-i7-1255u-power\nkind=power\nwattsLow=15\nwattsHigh=55\nchip=Intel Core i7-1255U\nhow=Intel's published figures for the chip: Processor Base Power 15 W (the rated sustained power) and Maximum Turbo Power 55 W. The model uses 15 W for the extra draw of AI work on a laptop that is already on for the employee — change it on the page.",
+   "source": "fallstack@4eeb828:registry/prices.json",
+   "split": "heldout"
+  },
+  {
+   "id": "keyvalue-04",
+   "shape": "keyvalue",
+   "chars": 398,
+   "text": "id=microsoft-365-2026-rise\nkind=rise\nwhat=Microsoft's 1 July 2026 update raised Microsoft 365 plan prices — from 5% (Microsoft 365 E5, US$57 to US$60) to 33% (Microsoft 365 F1, US$2.25 to US$3.00). Microsoft 365 Copilot is not among the plans in that price table: the Copilot seat on this page is Microsoft's current UK list price.\nquote=Pricing updates take effect July 1, 2026.\nlow=0.05\nhigh=0.33",
+   "source": "fallstack@4eeb828:registry/prices.json",
+   "split": "heldout"
+  },
+  {
+   "id": "keyvalue-05",
+   "shape": "keyvalue",
+   "chars": 408,
+   "text": "id=salesforce-pro-suite\nkind=saas\nvendor=Salesforce\nproduct=Salesforce Pro Suite\nfunction=crm\nprice=80\ncurrency=GBP\nper=user / month, billed annually\nvat=not stated\nquote=£ 80 GBP/User/Month (Billed annually)\nnote=The flexible CRM suite across sales, service, marketing and commerce; the cheapest paid suite above the small-team Starter.\nsource=https://www.salesforce.com/uk/sales/pricing/\nchecked=2026-09-30",
+   "source": "fallstack@4eeb828:registry/prices.json",
+   "split": "heldout"
+  },
+  {
+   "id": "keyvalue-06",
+   "shape": "keyvalue",
+   "chars": 395,
+   "text": "id=ons-ashe-2025-it-salaries\nkind=salaries\nwhat=ONS, Annual Survey of Hours and Earnings 2025 (provisional), Table 14.7a, median gross annual pay, full-time employee jobs, United Kingdom\nsource=https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/datasets/occupation4digitsoc2010ashetable14\nchecked=2026-09-29\nroles.2132.title=IT managers\nroles.2132.median=56438",
+   "source": "fallstack@4eeb828:registry/prices.json",
+   "split": "heldout"
+  },
+  {
+   "id": "keyvalue-07",
+   "shape": "keyvalue",
+   "chars": 285,
+   "text": "id=chatgpt-business\nkind=seat\nproduct=ChatGPT Business (standard seat)\nprice=15\ncurrency=GBP\nper=seat / month, billed annually\nvat=not stated\nquote=Standard seat £15 / month … £15/month if billed annually.\naddOn=null\nmaxSeats=null\nsource=https://chatgpt.com/pricing/\nchecked=2026-09-29",
+   "source": "fallstack@4eeb828:registry/prices.json",
+   "split": "heldout"
+  },
+  {
+   "id": "keyvalue-08",
+   "shape": "keyvalue",
+   "chars": 418,
+   "text": "id=m365-copilot\nkind=seat\nproduct=Microsoft 365 Copilot (enterprise)\nprice=23.1\ncurrency=GBP\nper=user / month, paid yearly, annual commitment\nvat=excluded\nquote=£23.10 user/month, paid yearly … Price does not include VAT.\naddOn=Added to an existing Microsoft 365 licence, which both sides of this comparison keep.\nmaxSeats=null\nsource=https://www.microsoft.com/en-gb/microsoft-365-copilot/enterprise\nchecked=2026-09-29",
+   "source": "fallstack@4eeb828:registry/prices.json",
+   "split": "calibration"
+  },
+  {
+   "id": "keyvalue-09",
+   "shape": "keyvalue",
+   "chars": 301,
+   "text": "id=claude-team\nkind=seat\nproduct=Claude Team (standard seat)\nprice=18\ncurrency=GBP\nper=seat / month, billed annually\nvat=included\nquote=For teams of 2 to 150 … £18 Per seat / month if billed annually … Prices include 20% VAT\naddOn=null\nmaxSeats=150\nsource=https://claude.com/pricing\nchecked=2026-09-29",
+   "source": "fallstack@4eeb828:registry/prices.json",
+   "split": "heldout"
+  },
+  {
+   "id": "keyvalue-10",
+   "shape": "keyvalue",
+   "chars": 347,
+   "text": "id=dynamics-365-human-resources\nkind=saas\nvendor=Microsoft\nproduct=Dynamics 365 Human Resources\nfunction=hr\nprice=103.8\ncurrency=GBP\nper=user / month, paid yearly\nvat=excluded\nquote=£103.80 user/month, paid yearly … Price does not include VAT.\nsource=https://www.microsoft.com/en-gb/dynamics-365/products/human-resources/pricing\nchecked=2026-09-30",
+   "source": "fallstack@4eeb828:registry/prices.json",
+   "split": "calibration"
+  },
+  {
+   "id": "keyvalue-11",
+   "shape": "keyvalue",
+   "chars": 443,
+   "text": "id=salesforce-2025-rise\nkind=rise\nwhat=Salesforce raised list prices for its Enterprise and Unlimited editions of Sales Cloud, Service Cloud, Field Service and select Industries Clouds by an average of 6% on 1 August 2025; Starter and Pro editions were not changed.\nquote=On August 1, 2025, list prices will increase by an average of 6%.\nlow=0.06\nhigh=0.06\nsource=https://www.salesforce.com/news/stories/pricing-update-2025/\nchecked=2026-09-30",
+   "source": "fallstack@4eeb828:registry/prices.json",
+   "split": "calibration"
+  },
+  {
+   "id": "keyvalue-12",
+   "shape": "keyvalue",
+   "chars": 387,
+   "text": "id=ons-cpi\nkind=rate\nvalue=0.031\nwhat=UK Consumer Prices Index, 12-month rate to August 2026\nquote=The Consumer Prices Index (CPI) rose by 3.1% in the 12 months to August 2026\npublisher=ONS, Consumer price inflation, UK: August 2026 (released 16 September 2026)\nsource=https://www.ons.gov.uk/economy/inflationandpriceindices/bulletins/consumerpriceinflation/august2026\nchecked=2026-09-29",
+   "source": "fallstack@4eeb828:registry/prices.json",
+   "split": "calibration"
+  },
+  {
+   "id": "csv-01",
+   "shape": "csv",
+   "chars": 301,
+   "text": "id,kind,figure,currency,checked\nchatgpt-business,seat,15,GBP,2026-09-29\nclaude-enterprise,seat,20,USD,2026-09-29\nclaude-team,seat,18,GBP,2026-09-29\ngpt-5-nano,api,0.05,USD,2026-09-29\ngpt-5-mini,api,0.25,USD,2026-09-29\ngemini-3.1-flash-lite,api,0.25,USD,2026-09-29\nclaude-haiku-4.5,api,1,USD,2026-09-29",
+   "source": "fallstack@4eeb828:registry/prices.json",
+   "split": "heldout"
+  },
+  {
+   "id": "csv-02",
+   "shape": "csv",
+   "chars": 298,
+   "text": "id,kind,figure,currency,checked\nclaude-enterprise,seat,20,USD,2026-09-29\nclaude-team,seat,18,GBP,2026-09-29\ngpt-5-nano,api,0.05,USD,2026-09-29\ngpt-5-mini,api,0.25,USD,2026-09-29\ngemini-3.1-flash-lite,api,0.25,USD,2026-09-29\nclaude-haiku-4.5,api,1,USD,2026-09-29\nclaude-sonnet-5,api,2,USD,2026-09-29",
+   "source": "fallstack@4eeb828:registry/prices.json",
+   "split": "calibration"
+  },
+  {
+   "id": "csv-03",
+   "shape": "csv",
+   "chars": 284,
+   "text": "id,kind,figure,currency,checked\ngpt-5-nano,api,0.05,USD,2026-09-29\ngpt-5-mini,api,0.25,USD,2026-09-29\ngemini-3.1-flash-lite,api,0.25,USD,2026-09-29\nclaude-haiku-4.5,api,1,USD,2026-09-29\nclaude-sonnet-5,api,2,USD,2026-09-29\nuk-vat,rate,0.2,,2026-09-29\nfx-gbp-usd,fx,0.75396,,2026-09-29",
+   "source": "fallstack@4eeb828:registry/prices.json",
+   "split": "heldout"
+  },
+  {
+   "id": "csv-04",
+   "shape": "csv",
+   "chars": 309,
+   "text": "id,kind,figure,currency,checked\nofgem-price-cap-2026-q4,energy,26.32,,2026-09-29\nsalesforce-pro-suite,saas,80,GBP,2026-09-30\nsalesforce-core,saas,156,GBP,2026-09-30\ndynamics-365-finance,saas,161.5,GBP,2026-09-30\ndynamics-365-human-resources,saas,103.8,GBP,2026-09-30\nsalesforce-2025-rise,rise,0.06,,2026-09-30",
+   "source": "fallstack@4eeb828:registry/prices.json",
+   "split": "heldout"
+  },
+  {
+   "id": "csv-05",
+   "shape": "csv",
+   "chars": 316,
+   "text": "id,kind,figure,currency,checked\nuk-vat,rate,0.2,,2026-09-29\nfx-gbp-usd,fx,0.75396,,2026-09-29\ndesnz-electricity-nondomestic,energy,24.51,,2026-09-29\nintel-i7-1255u-power,power,15,,2026-09-29\nons-ashe-2025-it-salaries,salaries,,,2026-09-29\nons-cpi,rate,0.031,,2026-09-29\nuk-national-living-wage,rate,12.71,,2026-09-29",
+   "source": "fallstack@4eeb828:registry/prices.json",
+   "split": "heldout"
+  },
+  {
+   "id": "csv-06",
+   "shape": "csv",
+   "chars": 302,
+   "text": "id,kind,figure,currency,checked\ngpt-4o-mini,api,0.15,USD,2026-09-29\nofgem-price-cap-2026-q4,energy,26.32,,2026-09-29\nsalesforce-pro-suite,saas,80,GBP,2026-09-30\nsalesforce-core,saas,156,GBP,2026-09-30\ndynamics-365-finance,saas,161.5,GBP,2026-09-30\ndynamics-365-human-resources,saas,103.8,GBP,2026-09-30",
+   "source": "fallstack@4eeb828:registry/prices.json",
+   "split": "calibration"
+  },
+  {
+   "id": "csv-07",
+   "shape": "csv",
+   "chars": 303,
+   "text": "id,kind,figure,currency,checked\nuk-national-living-wage,rate,12.71,,2026-09-29\nons-ashe-2025-median-hourly,rate,19.67,,2026-09-29\nboe-inflation-target,rate,0.02,,2026-09-29\nmicrosoft-365-2026-rise,rise,0.05,,2026-09-29\ngpt-4o-mini,api,0.15,USD,2026-09-29\nofgem-price-cap-2026-q4,energy,26.32,,2026-09-29",
+   "source": "fallstack@4eeb828:registry/prices.json",
+   "split": "calibration"
+  },
+  {
+   "id": "csv-08",
+   "shape": "csv",
+   "chars": 301,
+   "text": "id,kind,figure,currency,checked\nm365-copilot,seat,23.1,GBP,2026-09-29\nchatgpt-business,seat,15,GBP,2026-09-29\nclaude-enterprise,seat,20,USD,2026-09-29\nclaude-team,seat,18,GBP,2026-09-29\ngpt-5-nano,api,0.05,USD,2026-09-29\ngpt-5-mini,api,0.25,USD,2026-09-29\ngemini-3.1-flash-lite,api,0.25,USD,2026-09-29",
+   "source": "fallstack@4eeb828:registry/prices.json",
+   "split": "heldout"
+  },
+  {
+   "id": "csv-09",
+   "shape": "csv",
+   "chars": 289,
+   "text": "id,kind,figure,currency,checked\nboe-inflation-target,rate,0.02,,2026-09-29\nmicrosoft-365-2026-rise,rise,0.05,,2026-09-29\ngpt-4o-mini,api,0.15,USD,2026-09-29\nofgem-price-cap-2026-q4,energy,26.32,,2026-09-29\nsalesforce-pro-suite,saas,80,GBP,2026-09-30\nsalesforce-core,saas,156,GBP,2026-09-30",
+   "source": "fallstack@4eeb828:registry/prices.json",
+   "split": "heldout"
+  },
+  {
+   "id": "csv-10",
+   "shape": "csv",
+   "chars": 288,
+   "text": "id,kind,figure,currency,checked\nfx-gbp-usd,fx,0.75396,,2026-09-29\ndesnz-electricity-nondomestic,energy,24.51,,2026-09-29\nintel-i7-1255u-power,power,15,,2026-09-29\nons-ashe-2025-it-salaries,salaries,,,2026-09-29\nons-cpi,rate,0.031,,2026-09-29\nuk-national-living-wage,rate,12.71,,2026-09-29",
+   "source": "fallstack@4eeb828:registry/prices.json",
+   "split": "calibration"
+  },
+  {
+   "id": "csv-11",
+   "shape": "csv",
+   "chars": 285,
+   "text": "id,kind,figure,currency,checked\nclaude-team,seat,18,GBP,2026-09-29\ngpt-5-nano,api,0.05,USD,2026-09-29\ngpt-5-mini,api,0.25,USD,2026-09-29\ngemini-3.1-flash-lite,api,0.25,USD,2026-09-29\nclaude-haiku-4.5,api,1,USD,2026-09-29\nclaude-sonnet-5,api,2,USD,2026-09-29\nuk-vat,rate,0.2,,2026-09-29",
+   "source": "fallstack@4eeb828:registry/prices.json",
+   "split": "heldout"
+  },
+  {
+   "id": "csv-12",
+   "shape": "csv",
+   "chars": 311,
+   "text": "id,kind,figure,currency,checked\ngemini-3.1-flash-lite,api,0.25,USD,2026-09-29\nclaude-haiku-4.5,api,1,USD,2026-09-29\nclaude-sonnet-5,api,2,USD,2026-09-29\nuk-vat,rate,0.2,,2026-09-29\nfx-gbp-usd,fx,0.75396,,2026-09-29\ndesnz-electricity-nondomestic,energy,24.51,,2026-09-29\nintel-i7-1255u-power,power,15,,2026-09-29",
+   "source": "fallstack@4eeb828:registry/prices.json",
+   "split": "heldout"
+  },
+  {
+   "id": "hex-01",
+   "shape": "hex",
+   "chars": 460,
+   "text": "427b35e2a0303e2496d1bd1fb17e4ff1554c1cbe4d7405cba96d73e1654e83fca8ac80c82ba3ad919fa1e95741bd44dfd6b67faae3298bf9a68dcbfae114f85761b8680f5381bb4f4317750659a1bbcc1abfa91882476985155c6f3c7d14f3461a6a372220566ca17c05038c8ce6e57a7d67f812e661816d3b4cd44f57368a9a8acf15f840d9fcc5048bd2ee02a5be816bf5b79bcfff8f588934a122dbe3b2a4279609a493f8b9bc6b6c1f4b228cb31c6f1bf2ce7afd017aa0ba1ddf71b088e8ca02b01fe5ded73b12d0c641f2de01ac544d394f8abcecb10ae2736622654d1869d855add756",
+   "source": "seeded bytes (mulberry32, seed 20260930)",
+   "split": "heldout"
+  },
+  {
+   "id": "hex-02",
+   "shape": "hex",
+   "chars": 450,
+   "text": "a69f305eef4d58cc6b3830839f5fa93e70dc77862fccb40548c95b1a4ad8dd8ab3035db7bf9f7728df5d7bc1bde59b011901f243fb52dd650d7c541ace80b7e614f76fe7f8734b3efa7a06a23f3c0662e57d631b653db6b192f810ea8d79de4c1657c19e61ca5c31f02443a8c08e997d30d82fa986062430949e63908d5249b4b13c687b38135be57f76ab26ff7b1c15c4fb76ac4a97a1ddfd626ae6ca05539362bb9ccf4a9580a0b6b4e3f186aeac98e47d657d2373ad3425181322a51845ec65be21d2424c47161fb68bced3c1b6dfa079a58e216afe6c4fd036ee3c8632e98c",
+   "source": "seeded bytes (mulberry32, seed 20260930)",
+   "split": "calibration"
+  },
+  {
+   "id": "hex-03",
+   "shape": "hex",
+   "chars": 460,
+   "text": "38a4381b731ebcb61eb0e64b312ebe51eb2a8cefb0fe452fdc0b4c1b11f8230b87367eaa4a0343200ce0a0da7854e0b038e76b88db15d097677a7b3acca64ecb015341192cf5c9ffc7ad49247796352f1cbd87dc8b1c8f852ccf8dfd11e02411fdcfc568afbac862258be1b9cefc3a10996cb55dd610d62abfd6df3a6949fc99bb5ff1f460b955707dd068bcb2fd28b48acbe1c937958c53fce27b1194d781089f2395963f1d260585d867bd152b36256f66209836c026794b435865ad887172c701e353aa8b7ea108db9cc015361c36b81ff94efccb0f37d7b808845628c5e88be0497bec2a",
+   "source": "seeded bytes (mulberry32, seed 20260930)",
+   "split": "calibration"
+  },
+  {
+   "id": "hex-04",
+   "shape": "hex",
+   "chars": 460,
+   "text": "81daa41779ff3df58a5611c7faef1a4c32549c3b8152fdbf105193fd9b399026efa4418d0a6b6b81f34d35dca2ed57a66ea475d185d04a9ae214c5c518b2a77093391370319125b72d53536e871fe79b51c5fcd0f7c1139a9bcc0b9b212b8fad0350d521681792b8bb818e2ee5f6b3e72e04f7f5e0d757e7055b322a8ab77ad27aa962f6cb264a0019256e484aca712af7be0422c57ab67e9f352ee37c9bf5adbc0423b966cec09331c4035f73394527833c7d384685938a9dd5e6562d0575d21a9b4dbf541eb666db482d4f42f9f2cdf4af2dca28d7aea5a673ad6538a0fec38d0c7dd620f9",
+   "source": "seeded bytes (mulberry32, seed 20260930)",
+   "split": "heldout"
+  },
+  {
+   "id": "hex-05",
+   "shape": "hex",
+   "chars": 460,
+   "text": "b727b1d7a52b100efbcf2aa40f3139bee71c7c1a2a895dbe63b90838aa86353e365133c5d68602b97922428b8845ed43d237b94866755ff7e7f020eab6a65ea70c0907e1d385d2fd8aa8ca600e068491b45c4900f5b7d33c6e54e42badf78247494ba43cad05a43a4e4f4e7c5fcb2c2c182b4e306c5933c81afea761ba5de71e628233a2caebbc039aa91daeb55bcd4d73fe3217f8a683e2cebc4b7d0ed92927b113ce6e97d05cfd7fd340855d494be806583c4ea5cbce1dc5027d99ac7403dd221a0ccf501825916cacf980f6b42ba5e55e94adaa3887022be41a488768e539ad7fe4b99eba",
+   "source": "seeded bytes (mulberry32, seed 20260930)",
+   "split": "heldout"
+  },
+  {
+   "id": "hex-06",
+   "shape": "hex",
+   "chars": 460,
+   "text": "3778d50de056108e244ae89f9dbbd30542c5e5f61c1a977213c3983bfd88df40eedcbf286035d04d7a3c992b3febb82b807fbaf2f5d3d53434afd7b915aa4fc8d33130e0f5d8e63bb2547b170c30e15a2991d138f03ffa6be7c91d852f2b8a019f2e20610bbf69412d44683ae453a7ab3ca01196af57eb92136700fe714814ce6bb74cea368aa552bb6abc8ea6c651fe908530e62f15ba27240a159aa977c303c8949128ef0cd1039680b2430e421754238f5bae4cd339cb457d74644cf2040cc947ff24e520a7c530c19d09a17156a89b0482588a46afdb487592273335a09e0af2f35f1340",
+   "source": "seeded bytes (mulberry32, seed 20260930)",
+   "split": "heldout"
+  },
+  {
+   "id": "hex-07",
+   "shape": "hex",
+   "chars": 440,
+   "text": "fe2e5f539be986948e8de25050ab5de916ff524e75d65578f9a6dac87a3fe1eecce0de1213798860bd7c3a1f5f15092d98a9a6bc54c95c9069923f4d52d6c4ad9af003ebfe5ecc9e8ea28c58ec709553fbaaa35f15d03891bd516dc3fcd6d42797bcead460f26389993af221e372dbc97a945f377422d18f3b8a8a2edf23e213919c6dbb850c34314b14cb1cab51aebac1a4a15259bda29af6bb007a9a081cff4a53bcd9a5e656fddf55b689846bdebf7d5ebc46a65977b00e481a6924b4f7c3add9c86d2acb034f7f61e239449a1d69ed2c25a7c1f021fe820507b7",
+   "source": "seeded bytes (mulberry32, seed 20260930)",
+   "split": "heldout"
+  },
+  {
+   "id": "hex-08",
+   "shape": "hex",
+   "chars": 460,
+   "text": "3460e7980d60b1439e47579fc8b34dfa87e3f2cdc1ca94123164f7c0181e773701dd338c5d6773cbc545ad4a6ac0461b1b8fe9ae90a715baa60bad132be64d1b4485b2e34a88dac3527c58581043216bdfadb300bc4b8f0450bd667d796bdc01a7e431c3f50d19fdd74c9823139cb4696361c65c464f6090397030ae37155963222d751b761a92c92e6d4d9753491c85fe5a7992562690e7a5dbe05ef8cff2d799d7ca4b4bd99c6b62e3819b0977f6e687ff3e9a2cd362f349fd9bbc80d5ead027d7d782c454ac031cd51cd212a8138816924055f61603e9919da3c9a4653f7a274f212e56d5",
+   "source": "seeded bytes (mulberry32, seed 20260930)",
+   "split": "calibration"
+  },
+  {
+   "id": "hex-09",
+   "shape": "hex",
+   "chars": 460,
+   "text": "76fec769c978b8e893744e8603c03940ab667a90dd2d9888ec709547438c776a1e1dd6088129fcff0757ceb71a0b372327d178467bf13724cb5ed57427b4be38e615dd53410781af2ee3d0f1870c41da895ce4f11c90abd0438c36f22fad70111b628852dde27cbd385b312299266c74a41525f1119256a48f6c18c9ebe6bec29bf9a9a271f8d71fbedc3c09c4193902d4127d4207f8cec2267c309f09a5a1d424531feeafbe63639d2ff2113293b01d5aad9010888db63feb060de703f065c70b3558569490bec58d0efc5a3fe33294daf989dda0ab8e54ebc815580f775d4f44dce4dc5801",
+   "source": "seeded bytes (mulberry32, seed 20260930)",
+   "split": "heldout"
+  },
+  {
+   "id": "hex-10",
+   "shape": "hex",
+   "chars": 460,
+   "text": "c6570c6781e80771724d3873978343f0b236de5e2be3bd9a4f9528460ac69806b957bec3081bb3171f6aff997a45f38830d9792a3489fe5f5b0e9a38595aeee61a08d8b311703641724a46c1b71c4418ec566cba85ca357f486bb89cd1f021a18bbd1cf2bae4681f39e40c185d5e7f205f43c7bbc69a599a6e4280f2bf5017cf10238b5f9ca2ee68fe5896c22ea10187d6f858ccadbfed92b13517528b9296a1b537a3d5782c6e61bd88b39e8b226c59f576eefa821453b5627c55c6152c159d6ebaf727a11078ee24661488bf81b26023f878571645892899a3a167ad998fa72b32acb632a7",
+   "source": "seeded bytes (mulberry32, seed 20260930)",
+   "split": "heldout"
+  },
+  {
+   "id": "hex-11",
+   "shape": "hex",
+   "chars": 460,
+   "text": "4255188dddd7f867e74dcdfa7282434bce0ff606a9d55b43b2a16ec001082185baf9146c3987cbee57cdcae7ffdb08401c422644012f879653208557e277ee8852889a9304ca82bba7fe2b915a72bf3de0a09a3624ef641e84e4335be628cccf49e0a073e5541f31ec6bc9c1449507d7a78d66d037af55700120d4d197ec20b99b40472c85612dbb308cdb5ec24397bd44cf512a2e6597d7c8cddae6a9e2b4b74c2a98322454fe7c0529e8a0e29154511fe3c7fc16dea86acef4fb0100fc8c627c51fa413581096c956860ebd77588338a69abb62a417676c49527aa0eb92417415a05e614ff",
+   "source": "seeded bytes (mulberry32, seed 20260930)",
+   "split": "heldout"
+  },
+  {
+   "id": "hex-12",
+   "shape": "hex",
+   "chars": 460,
+   "text": "029b7dba7c51eabb5b2ed2962a3e91b3e3996e7d054a1173f593503596f7636d4f9bea8f53a15a4a1dc2630a2742872ab97f12868019056b1cd3c5e169a51b5d666aeae564981f300ed811f1a82292b4513467121df06990a478aa4b25cfe63c45ccea733edf2b12ff6af0ecd646e64516ff9b02292794bb7c4dcea37179fa84b612ed8c4248bc10949a4098e1ba6cf920c483a5bce8f24e9c5f57b105d97fb37e22ddc5a91144cae12ac6e49e0273f8dfa6ba6e9c4622f2b8f50d410b189290cb89a9daed05acd4415c08b5edf17157fae2544ff2c7f6a489111807c0054eee6fea7a7a033d",
+   "source": "seeded bytes (mulberry32, seed 20260930)",
+   "split": "calibration"
+  },
+  {
+   "id": "base64-01",
+   "shape": "base64",
+   "chars": 392,
+   "text": "EjepcLzNJJYsvRO7IDPtV/S0sQx59yN3PdkHZD1SHMk43v0MdpFMkSM35UWMmUDaDQ6nndrlr05gzfH4ir82YrirUzdZRsn90G6hfu8jjXK/rqJvX5kpTrYk9iSyDd7k5eu/kmWvsJFIfxHKa/8U3oj6T8wauJF1BhHvqS9QXmc6lxsSABMpeRTJhpU2O8aR4iG3OcTnJpYx0+r61MiXkv/2eqaz6k6QW8ULfx9i75JJrMfLJYixX6VW/oPBDHaZwBx+tePGJJDuApEG1m3hhk9WSLPRARFODzSxRybPhShdLCfusCC5XrdPYQuD3BN95w5V68mnQsa1KTA7dCVoOVfz2al4G/VOEBOKbyoRb6ufMSwKltp2BgoSSGsT5lUCwnrfaQ==",
+   "source": "seeded bytes (mulberry32, seed 20260930)",
+   "split": "heldout"
+  },
+  {
+   "id": "base64-02",
+   "shape": "base64",
+   "chars": 308,
+   "text": "t/+llKyiTn+bSQv77D8dObWAecB/g+/3O9xQac9TgODNVXBtMOGZ3Wmgzvf7K5JZR071+raDgwRV5zIVc4OVd5j796xWKLgEtvnm55ckZdIAJXWmF5IUDp3mYh06uCHGOsaP0lXbL1jN/kcYZaZL6WtJbHFw20/cjy+QMXQbn8c7/bOHqDkJFZdFXjfPDBoS88JR5DBKBcO8PJ1PWsVZ53aFS0M/ko2K5g644/OmRkzUb1qxZuqbcJS9ytAKCWzWHe9yIqXKwWx4enfcCxBzJ1xvoVpeNpSykDIGIApJQJMWjr71lYs=",
+   "source": "seeded bytes (mulberry32, seed 20260930)",
+   "split": "calibration"
+  },
+  {
+   "id": "base64-03",
+   "shape": "base64",
+   "chars": 328,
+   "text": "gdqkF3n/PfWKVhHH+u8aTDJUnDuBUv2/EFGT/Zs5kCbvpEGNCmtrgfNNNdyi7VembqR10YXQSpriFMXFGLKncJM5E3AxkSW3LVNTbocf55tRxfzQ98ETmpvMC5shK4+tA1DVIWgXkri7gY4u5faz5y4E9/Xg11fnBVsyKoq3etJ6qWL2yyZKABklbkhKynEq974EIsV6tn6fNS7jfJv1rbwEI7lmzsCTMcQDX3M5RSeDPH04RoWTip3V5lYtBXXSGptNv1QetmbbSC1PQvnyzfSvLcoo166lpnOtZTig/sONDH3WIPlQIrhcedNqLN3uCOekcA==",
+   "source": "seeded bytes (mulberry32, seed 20260930)",
+   "split": "heldout"
+  },
+  {
+   "id": "base64-04",
+   "shape": "base64",
+   "chars": 360,
+   "text": "xlcMZ4HoB3FyTThzl4ND8LI23l4r472aT5UoRgrGmAa5V77DCBuzFx9q/5l6RfOIMNl5KjSJ/l9bDpo4WVru5hoI2LMRcDZBckpGwbccRBjsVmy6hco1f0hruJzR8CGhi70c8rrkaB855AwYXV5/IF9Dx7vGmlmabkKA8r9QF88QI4tfnKLuaP5YlsIuoQGH1vhYzK2/7ZKxNRdSi5KWobU3o9V4LG5hvYiznosibFn1du76ghRTtWJ8VcYVLBWdbrr3J6EQeO4kZhSIv4GyYCP4eFcWRYkomaOhZ62Zj6crMqy2MqeqfQWsZWDO6/HoWVnJkgtGLlf1M0yINelGA5JktOWlPPPiLMZpWSpj",
+   "source": "seeded bytes (mulberry32, seed 20260930)",
+   "split": "calibration"
+  },
+  {
+   "id": "base64-05",
+   "shape": "base64",
+   "chars": 388,
+   "text": "BfJVRkkGgYwGivaPcWxL+ufaPCV8PR1YLnNiCQiO+9upHq7Me9LrDcfduYCAjVhNxv1CKEGkOjHO0DDkAKcnpWorOhO20tTMsjDs27OIW2yBPyb3GAtTXBdZhloPah5n1QcgjDTE0Nwqp7yZwjZh/htL//lY9m5hkaPZEClPplVHuKmJVhtHJ7k5EZ3EeM6HJYpWwCQlgfdjU/IGeO2eMMPSIQNdqpGJ4+7HIzgAR0YQpZcLvyxroppXZjKtM1NyYZ0EZuaGGKpLmiv5hr6F7fY1TjJC1WdgDSloZ9aHWoUDq3BNkphiUujFJuBQ7eARsWvhJjfe+CsxRs6PCFQ9Tihza03wkJ+cu6Ej6z1dPbF01264rUj7hornP5QbmYV0sRI=",
+   "source": "seeded bytes (mulberry32, seed 20260930)",
+   "split": "heldout"
+  },
+  {
+   "id": "base64-06",
+   "shape": "base64",
+   "chars": 412,
+   "text": "yiBXLSEWfhxKl1Y4rxKjQEAV+QEIwR4otoLQmjbEdr3ftkWI57Z748BVDS1UIg1hoxiKPcrOP8VXLnuhcaK7zUtE3icr6IaVS6Pjq+cqIl5OO3fa/OdSAqmrQZyi9kiKG2oiJNPs6QnBiK4m5qPoY60Ygo/y1DmPOwGstavBP/9t/+F+VRiMEKka3su0ioybN4hW2lG5WxdYnU71j0iHrPZkfrBMk2fiApDHGO1rujMo9D/KLLAVZowB3uaHMJEPTLPw3j+KeVfO9ewDZzgedIJuvslN3IZ0wuPT/ukBTwfqgTZQXL6J+dm9CQVLuJCTXnytbhSA/gglMfj9xHQbJHo0ss+x/JGeXn+6LWgUEYgZPWMylRMlV/NEJWuPBeQE9LqzRmcOXpkJ0i2nQ4PxV4U84Q==",
+   "source": "seeded bytes (mulberry32, seed 20260930)",
+   "split": "heldout"
+  },
+  {
+   "id": "base64-07",
+   "shape": "base64",
+   "chars": 300,
+   "text": "AFXxvlgBnUffoM1MtXBN31VOq+B08LDW3ISDPYKfitJTNHGEu4gufiUwpajRafxUrhCZs0wMVqaR5+OClPbhzF8G2GflMbng6TwpWRbVs2JrAyQbEyhxqwV7h/lKFLzDXRbysN9FjoOO07fqAdoOyBKtaFaTvrBNHfL/S5Zfr3FiDVF1ReAEYkhJEosBGMgKukIGsrS1dPb4aDxUqP9aB9K27ZbBz+6NkJfVjAlwsvBH9c1HV8RHgyidpsHBoa13vMOULPdHn8ro9CBCnNqoJix9vhUPMrYF3pQHI5ElqA==",
+   "source": "seeded bytes (mulberry32, seed 20260930)",
+   "split": "heldout"
+  },
+  {
+   "id": "base64-08",
+   "shape": "base64",
+   "chars": 296,
+   "text": "/i5fU5vphpSOjeJQUKtd6Rb/Uk511lV4+abayHo/4e7M4N4SE3mIYL18Oh9fFQktmKmmvFTJXJBpkj9NUtbErZrwA+v+XsyejqKMWOxwlVP7qqNfFdA4kb1RbcP81tQnl7zq1GDyY4mZOvIh43LbyXqUXzd0ItGPO4qKLt8j4hORnG27hQw0MUsUyxyrUa66waShUlm9opr2uwB6mggc/0pTvNml5lb931W2iYRr3r99XrxGpll3sA5IGmkktPfDrdnIbSrLA09/YeI5RJodae0sJafB8CH+ggUHtw==",
+   "source": "seeded bytes (mulberry32, seed 20260930)",
+   "split": "calibration"
+  },
+  {
+   "id": "base64-09",
+   "shape": "base64",
+   "chars": 356,
+   "text": "dv7Hacl4uOiTdE6GA8A5QKtmepDdLZiI7HCVR0OMd2oeHdYIgSn8/wdXzrcaCzcjJ9F4RnvxNyTLXtV0J7S+OOYV3VNBB4GvLuPQ8YcMQdqJXOTxHJCr0EOMNvIvrXARG2KIUt3ifL04WzEimSZsdKQVJfERklakj2wYyevmvsKb+amicfjXH77cPAnEGTkC1BJ9Qgf4zsImfDCfCaWh1CRTH+6vvmNjnS/yETKTsB1arZAQiI22P+sGDecD8GXHCzVYVpSQvsWNDvxaP+MylNr5id2gq45U68gVWA93XU9E3OTcWAEjTS+e+bgWerkDKBNud8rb718y9SDP0l8mpNToX5S3zuv/e/qJ",
+   "source": "seeded bytes (mulberry32, seed 20260930)",
+   "split": "heldout"
+  },
+  {
+   "id": "base64-10",
+   "shape": "base64",
+   "chars": 316,
+   "text": "NGDnmA1gsUOeR1efyLNN+ofj8s3BypQSMWT3wBgedzcB3TOMXWdzy8VFrUpqwEYbG4/prpCnFbqmC60TK+ZNG0SFsuNKiNrDUnxYWBBDIWvfrbMAvEuPBFC9Zn15a9wBp+Qxw/UNGf3XTJgjE5y0aWNhxlxGT2CQOXAwrjcVWWMiLXUbdhqSyS5tTZdTSRyF/lp5klYmkOel2+Be+M/y15nXyktL2ZxrYuOBmwl39uaH/z6aLNNi80n9m7yA1erQJ9fXgsRUrAMc1RzSEqgTiBaSQFX2FgPpkZ2jyaRlP3onTyEuVtW18Z7IRn79",
+   "source": "seeded bytes (mulberry32, seed 20260930)",
+   "split": "heldout"
+  },
+  {
+   "id": "base64-11",
+   "shape": "base64",
+   "chars": 380,
+   "text": "Apt9unxR6rtbLtKWKj6Rs+OZbn0FShFz9ZNQNZb3Y21Pm+qPU6FaSh3CYwonQocquX8ShoAZBWsc08XhaaUbXWZq6uVkmB8wDtgR8agikrRRNGcSHfBpkKR4qkslz+Y8Rczqcz7fKxL/avDs1kbmRRb/mwIpJ5S7fE3Oo3F5+oS2Eu2MQki8EJSaQJjhumz5IMSDpbzo8k6cX1exBdl/s34i3cWpEUTK4SrG5J4Cc/jfprpunEYi8rj1DUELGJKQy4mp2u0FrNRBXAi17fFxV/riVE/yx/akiREYB8AFTu5v6np6Az1WtzFR0onDOPFIlOWKSEJlYV2QnaZr2QPYxQi35ZX8vEmV8PyrTHcMz043bAmC5aZMtwI1CQ==",
+   "source": "seeded bytes (mulberry32, seed 20260930)",
+   "split": "calibration"
+  },
+  {
+   "id": "base64-12",
+   "shape": "base64",
+   "chars": 388,
+   "text": "N3jVDeBWEI4kSuifnbvTBULF5fYcGpdyE8OYO/2I30Du3L8oYDXQTXo8mSs/67grgH+68vXT1TQ0r9e5FapPyNMxMOD12OY7slR7Fwww4VopkdE48D/6a+fJHYUvK4oBny4gYQu/aUEtRGg65FOnqzygEZavV+uSE2cA/nFIFM5rt0zqNoqlUrtqvI6mxlH+kIUw5i8VuickChWaqXfDA8iUkSjvDNEDloCyQw5CF1Qjj1uuTNM5y0V9dGRM8gQMyUf/JOUgp8UwwZ0JoXFWqJsEgliKRq/bSHWSJzM1oJ4K8vNfE0CLKbBrLowOw3TAafaKmV+QLvXfZc9MuN0Z1z9yG7zriiEEMjaZ9mmKd3XT2AuLnuUGEAjSzEeRdrhbbNA=",
+   "source": "seeded bytes (mulberry32, seed 20260930)",
+   "split": "heldout"
+  }
+ ]
+}
